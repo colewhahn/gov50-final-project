@@ -12,3 +12,5 @@ output:
 ## Project thoughts
 
 I am interested in exploring data related to Taylor Swift's impact on benefiting the economy, voting behavior, or something related to going to the movies.
+
+## Proposal
