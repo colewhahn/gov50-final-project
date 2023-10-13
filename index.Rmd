@@ -11,8 +11,15 @@ output:
 
 ## Project thoughts
 
-I am interested in exploring data related to Taylor Swift's impact on benefiting the economy, voting behavior, or something related to going to the movies.
+I am interested in exploring data related to Taylor Swift's impact on benefiting the economy, voting behavior, or something related to movies.
 
 ## Proposal
 
-For my project...
+Do younger people prefer the Star Wars prequel movies more than the originals? In this study, I plan to analyze respondents ages and which Star Wars movies they like the most. I hypothesize that if people are younger then they will prefer the prequel movies more than the originals because they grew up as the prequel movies were being released. For this analysis, I will be using data collected by Walt Hickey from FiveThirtyEight. The explanatory variable of interest is the age group of the respondents in the survey. This is measured in four age groups: 18-29, 30-44, 45-60, and > 60. My outcome variable is how respondents ranked the 6 Star Wars movies. This is measured by rankings of 1 to 6 with 1 being their favorite film and 6 being their least favorite. If I observe that those in the younger age category (18-29) ranked the prequel movies higher, this would support my hypothesis. However, if I observe the opposite and say, for example, there is only strong support for the original movies among all age groups, this would be evidence against my hypothesis.
+
+
+
+
+
+
+
