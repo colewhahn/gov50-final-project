@@ -50,6 +50,9 @@ StarWars |>
        subtitle = "With 1 being the best and 6 being the worst",
        x = "Age Groups",
        y = "Ranking",
-       caption = "Among 834 Respondents")
+       caption = "Among 818 Respondents")
 
 ``` 
+
+
+
