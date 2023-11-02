@@ -17,9 +17,39 @@ I am interested in exploring data related to Taylor Swift's impact on benefiting
 
 Do younger people prefer the Star Wars prequel movies more than the originals? In this study, I plan to analyze respondents ages and which Star Wars movies they like the most. I hypothesize that if people are younger then they will prefer the prequel movies more than the originals because they grew up as the prequel movies were being released. For this analysis, I will be using data collected by Walt Hickey from FiveThirtyEight. The explanatory variable of interest is the age group of the respondents in the survey. This is measured in four age groups: 18-29, 30-44, 45-60, and > 60. My outcome variable is how respondents ranked the 6 Star Wars movies. This is measured by rankings of 1 to 6 with 1 being their favorite film and 6 being their least favorite. If I observe that those in the younger age category (18-29) ranked the prequel movies higher, this would support my hypothesis. However, if I observe the opposite and say, for example, there is only strong support for the original movies among all age groups, this would be evidence against my hypothesis.
 
+## Data Visualization
 
+```{r}
+library(tidyverse)
+library(ggplot2)
+load("StarWars.RData")
+StarWars <- as_tibble(StarWars) |>
+  select(V1:V3, V10:V15, V34:V38) |>
+  rename(respondent_id = V1, seen_any_film = V2, fan = V3, ep1_rank = V10, 
+         ep2_rank = V11, ep3_rank = V12, ep4_rank = V13, ep5_rank = V14, 
+         ep6_rank = V15, gender = V34, age = V35, income = V36, 
+         education = V37, location = V38) |>
+  slice(-1, -2) |>
+  mutate(ep1_rank = as.integer(ep1_rank),
+         ep2_rank = as.integer(ep2_rank),
+         ep3_rank = as.integer(ep3_rank),
+         ep4_rank = as.integer(ep4_rank),
+         ep5_rank = as.integer(ep5_rank),
+         ep6_rank = as.integer(ep6_rank)) |>
+  na.omit()
+StarWars
+```
 
+```{r}
+StarWars |>
+  filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
+  ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
+                       y = ep3_rank)) +
+  geom_boxplot(color = "indianred", fill = "steelblue1") +
+  labs(title = "How Age Groups Rank Star Wars: Episode III",
+       subtitle = "With 1 being the best and 6 being the worst",
+       x = "Age Groups",
+       y = "Ranking",
+       caption = "Among 834 Respondents")
 
-
-
-
+``` 
