@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/figure-html5/unnamed-chunk-2-1.png","index_files/header-attrs-2.17/header-attrs.js","index_files/header-attrs-2.24/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/figure-html5/unnamed-chunk-2-1.png","index_files/figure-html5/unnamed-chunk-3-1.png","index_files/figure-html5/unnamed-chunk-3-2.png","index_files/header-attrs-2.17/header-attrs.js","index_files/header-attrs-2.24/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1517,15 +1517,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<h2 id="project-thoughts">Project thoughts</h2>
+<h2 id="project-thoughts-milestone-1">Project Thoughts (Milestone 1)</h2>
 <p>I am interested in exploring data related to Taylor Swift’s impact on benefiting the economy, voting behavior, or something related to movies.</p>
-<h2 id="proposal">Proposal</h2>
+<h2 id="proposal-milestone-2">Proposal (Milestone 2)</h2>
 <p>Do younger people prefer the Star Wars prequel movies more than the originals? In this study, I plan to analyze respondents ages and which Star Wars movies they like the most. I hypothesize that if people are younger then they will prefer the prequel movies more than the originals because they grew up as the prequel movies were being released. For this analysis, I will be using data collected by Walt Hickey from FiveThirtyEight. The explanatory variable of interest is the age group of the respondents in the survey. This is measured in four age groups: 18-29, 30-44, 45-60, and &gt; 60. My outcome variable is how respondents ranked the 6 Star Wars movies. This is measured by rankings of 1 to 6 with 1 being their favorite film and 6 being their least favorite. If I observe that those in the younger age category (18-29) ranked the prequel movies higher, this would support my hypothesis. However, if I observe the opposite and say, for example, there is only strong support for the original movies among all age groups, this would be evidence against my hypothesis.</p>
-<h2 id="data-visualization">Data Visualization</h2>
+<h2 id="data-visualization-milestone-3">Data Visualization (Milestone 3)</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span></span>
 <span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
+<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://rpkgs.datanovia.com/ggpubr/'>ggpubr</a></span><span class='op'>)</span></span>
 <span><span class='fu'><a href='https://rdrr.io/r/base/load.html'>load</a></span><span class='op'>(</span><span class='st'>"StarWars.RData"</span><span class='op'>)</span></span>
 <span><span class='va'>StarWars</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='va'>StarWars</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
 <span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>V1</span><span class='op'>:</span><span class='va'>V3</span>, <span class='va'>V10</span><span class='op'>:</span><span class='va'>V15</span>, <span class='va'>V34</span><span class='op'>:</span><span class='va'>V38</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
@@ -1539,44 +1540,114 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span>         ep3_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep3_rank</span><span class='op'>)</span>,</span>
 <span>         ep4_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep4_rank</span><span class='op'>)</span>,</span>
 <span>         ep5_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep5_rank</span><span class='op'>)</span>,</span>
-<span>         ep6_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep6_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/r/stats/na.fail.html'>na.omit</a></span><span class='op'>(</span><span class='op'>)</span></span>
+<span>         ep6_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep6_rank</span><span class='op'>)</span><span class='op'>)</span></span>
 <span><span class='va'>StarWars</span></span></code></pre>
 </div>
-<pre><code># A tibble: 834 × 14
+<pre><code># A tibble: 1,186 × 14
    respondent_id seen_any_film fan   ep1_rank ep2_rank ep3_rank
    &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;    &lt;int&gt;    &lt;int&gt;    &lt;int&gt;
- 1 3292879998    Yes           Yes          3        2        1
- 2 3292765271    Yes           No           1        2        3
- 3 3292763116    Yes           Yes          5        6        1
- 4 3292731220    Yes           Yes          5        4        6
- 5 3292719380    Yes           Yes          1        4        3
- 6 3292684787    Yes           Yes          6        5        4
- 7 3292663732    Yes           Yes          4        5        6
- 8 3292654043    Yes           Yes          5        4        6
- 9 3292640424    Yes           No           1        2        3
-10 3292609214    Yes           No           3        4        5
-# ℹ 824 more rows
+ 1 3292879998    Yes           &quot;Yes&quot;        3        2        1
+ 2 3292879538    No            &quot;&quot;          NA       NA       NA
+ 3 3292765271    Yes           &quot;No&quot;         1        2        3
+ 4 3292763116    Yes           &quot;Yes&quot;        5        6        1
+ 5 3292731220    Yes           &quot;Yes&quot;        5        4        6
+ 6 3292719380    Yes           &quot;Yes&quot;        1        4        3
+ 7 3292684787    Yes           &quot;Yes&quot;        6        5        4
+ 8 3292663732    Yes           &quot;Yes&quot;        4        5        6
+ 9 3292654043    Yes           &quot;Yes&quot;        5        4        6
+10 3292640424    Yes           &quot;No&quot;         1        2        3
+# ℹ 1,176 more rows
 # ℹ 8 more variables: ep4_rank &lt;int&gt;, ep5_rank &lt;int&gt;, ep6_rank &lt;int&gt;,
 #   gender &lt;chr&gt;, age &lt;chr&gt;, income &lt;chr&gt;, education &lt;chr&gt;,
 #   location &lt;chr&gt;</code></pre>
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>age_ep3_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
 <span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
 <span>                       y <span class='op'>=</span> <span class='va'>ep3_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue1"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"How Age Groups Rank Star Wars: Episode III"</span>,</span>
-<span>       subtitle <span class='op'>=</span> <span class='st'>"With 1 being the best and 6 being the worst"</span>,</span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode III Rank"</span>,</span>
+<span>       subtitle <span class='op'>=</span> <span class='st'>"With 1 as best, 6 as worst"</span>,</span>
 <span>       x <span class='op'>=</span> <span class='st'>"Age Groups"</span>,</span>
 <span>       y <span class='op'>=</span> <span class='st'>"Ranking"</span>,</span>
-<span>       caption <span class='op'>=</span> <span class='st'>"Among 818 Respondents"</span><span class='op'>)</span></span></code></pre>
+<span>       caption <span class='op'>=</span> <span class='st'>"Among 1,186 Respondents"</span><span class='op'>)</span></span>
+<span><span class='va'>age_ep3_rank</span></span></code></pre>
 </div>
 <p><img src="index_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
 </div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Based on this visualization, it appears that across all age groups, Star Wars: Episode III is not often placed highly in the ranking of the films. However, those 18-29 and &gt;60 place it higher than those 30-60.</p>
+<h2 id="data-analysis-milestone-4">Data Analysis (Milestone 4)</h2>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>age_ep1_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>                       y <span class='op'>=</span> <span class='va'>ep1_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue1"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode I Rank"</span>,</span>
+<span>       subtitle <span class='op'>=</span> <span class='st'>"With 1 as best, 6 as worst"</span>,</span>
+<span>       x <span class='op'>=</span> <span class='st'>"Age Groups"</span>,</span>
+<span>       y <span class='op'>=</span> <span class='st'>"Ranking"</span>,</span>
+<span>       caption <span class='op'>=</span> <span class='st'>"Among 1,186 Respondents"</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='va'>age_ep2_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>                       y <span class='op'>=</span> <span class='va'>ep2_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue1"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode II Rank"</span>,</span>
+<span>       subtitle <span class='op'>=</span> <span class='st'>"With 1 as best, 6 as worst"</span>,</span>
+<span>       x <span class='op'>=</span> <span class='st'>"Age Groups"</span>,</span>
+<span>       y <span class='op'>=</span> <span class='st'>"Ranking"</span>,</span>
+<span>       caption <span class='op'>=</span> <span class='st'>"Among 1,186 Respondents"</span><span class='op'>)</span></span>
+<span>  </span>
+<span><span class='va'>age_ep4_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>                       y <span class='op'>=</span> <span class='va'>ep4_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue1"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode IV Rank"</span>,</span>
+<span>       subtitle <span class='op'>=</span> <span class='st'>"With 1 as best, 6 as worst"</span>,</span>
+<span>       x <span class='op'>=</span> <span class='st'>"Age Groups"</span>,</span>
+<span>       y <span class='op'>=</span> <span class='st'>"Ranking"</span>,</span>
+<span>       caption <span class='op'>=</span> <span class='st'>"Among 1,186 Respondents"</span><span class='op'>)</span></span>
+<span>  </span>
+<span><span class='va'>age_ep5_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>                       y <span class='op'>=</span> <span class='va'>ep5_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue1"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode V Rank"</span>,</span>
+<span>       subtitle <span class='op'>=</span> <span class='st'>"With 1 as best, 6 as worst"</span>,</span>
+<span>       x <span class='op'>=</span> <span class='st'>"Age Groups"</span>,</span>
+<span>       y <span class='op'>=</span> <span class='st'>"Ranking"</span>,</span>
+<span>       caption <span class='op'>=</span> <span class='st'>"Among 1,186 Respondents"</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='va'>age_ep6_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
+<span>                       y <span class='op'>=</span> <span class='va'>ep6_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue1"</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode VI Rank"</span>,</span>
+<span>       subtitle <span class='op'>=</span> <span class='st'>"With 1 as best, 6 as worst"</span>,</span>
+<span>       x <span class='op'>=</span> <span class='st'>"Age Groups"</span>,</span>
+<span>       y <span class='op'>=</span> <span class='st'>"Ranking"</span>,</span>
+<span>       caption <span class='op'>=</span> <span class='st'>"Among 1,186 Respondents"</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='fu'><a href='https://rpkgs.datanovia.com/ggpubr/reference/ggarrange.html'>ggarrange</a></span><span class='op'>(</span><span class='va'>age_ep1_rank</span>, <span class='va'>age_ep2_rank</span>, <span class='va'>age_ep3_rank</span>, <span class='va'>age_ep4_rank</span>, <span class='va'>age_ep5_rank</span>, <span class='va'>age_ep6_rank</span>, ncol <span class='op'>=</span> <span class='fl'>3</span>, align <span class='op'>=</span> <span class='st'>"v"</span><span class='op'>)</span></span></code></pre>
+</div>
+<pre><code>$`1`</code></pre>
+<p><img src="index_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
+<pre><code>
+$`2`</code></pre>
+<p><img src="index_files/figure-html5/unnamed-chunk-3-2.png" width="624" /></p>
+<pre><code>
+attr(,&quot;class&quot;)
+[1] &quot;list&quot;      &quot;ggarrange&quot;</code></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
