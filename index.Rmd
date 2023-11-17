@@ -118,7 +118,7 @@ age_ep6_rank <- StarWars |>
 ggarrange(age_ep1_rank, age_ep2_rank, age_ep3_rank, age_ep4_rank, age_ep5_rank, age_ep6_rank, ncol = 3, align = "v")
 ```
 
-
+Based on these visualizations, we can get a better sense of the correlation between age and which Star Wars movies are ranked higher. Looking at the graphs, it appears that there is not a strong correlation between age and ranking. In fact, among all age groups, it appears that episodes IV, V, and VI are generally ranked the highest. Meaning, the original trilogy is generally liked more among everyone regardless of age.
 
 
 

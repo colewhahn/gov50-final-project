@@ -1540,23 +1540,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span>         ep3_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep3_rank</span><span class='op'>)</span>,</span>
 <span>         ep4_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep4_rank</span><span class='op'>)</span>,</span>
 <span>         ep5_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep5_rank</span><span class='op'>)</span>,</span>
-<span>         ep6_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep6_rank</span><span class='op'>)</span><span class='op'>)</span></span>
+<span>         ep6_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep6_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
+<span>  <span class='fu'><a href='https://rdrr.io/r/stats/na.fail.html'>na.omit</a></span><span class='op'>(</span><span class='op'>)</span></span>
 <span><span class='va'>StarWars</span></span></code></pre>
 </div>
-<pre><code># A tibble: 1,186 × 14
+<pre><code># A tibble: 834 × 14
    respondent_id seen_any_film fan   ep1_rank ep2_rank ep3_rank
    &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;    &lt;int&gt;    &lt;int&gt;    &lt;int&gt;
- 1 3292879998    Yes           &quot;Yes&quot;        3        2        1
- 2 3292879538    No            &quot;&quot;          NA       NA       NA
- 3 3292765271    Yes           &quot;No&quot;         1        2        3
- 4 3292763116    Yes           &quot;Yes&quot;        5        6        1
- 5 3292731220    Yes           &quot;Yes&quot;        5        4        6
- 6 3292719380    Yes           &quot;Yes&quot;        1        4        3
- 7 3292684787    Yes           &quot;Yes&quot;        6        5        4
- 8 3292663732    Yes           &quot;Yes&quot;        4        5        6
- 9 3292654043    Yes           &quot;Yes&quot;        5        4        6
-10 3292640424    Yes           &quot;No&quot;         1        2        3
-# ℹ 1,176 more rows
+ 1 3292879998    Yes           Yes          3        2        1
+ 2 3292765271    Yes           No           1        2        3
+ 3 3292763116    Yes           Yes          5        6        1
+ 4 3292731220    Yes           Yes          5        4        6
+ 5 3292719380    Yes           Yes          1        4        3
+ 6 3292684787    Yes           Yes          6        5        4
+ 7 3292663732    Yes           Yes          4        5        6
+ 8 3292654043    Yes           Yes          5        4        6
+ 9 3292640424    Yes           No           1        2        3
+10 3292609214    Yes           No           3        4        5
+# ℹ 824 more rows
 # ℹ 8 more variables: ep4_rank &lt;int&gt;, ep5_rank &lt;int&gt;, ep6_rank &lt;int&gt;,
 #   gender &lt;chr&gt;, age &lt;chr&gt;, income &lt;chr&gt;, education &lt;chr&gt;,
 #   location &lt;chr&gt;</code></pre>
@@ -1647,6 +1648,7 @@ $`2`</code></pre>
 attr(,&quot;class&quot;)
 [1] &quot;list&quot;      &quot;ggarrange&quot;</code></pre>
 </div>
+<p>Based on these visualizations, we can determine which films each age group likes best based on their means. For those 18-29, they rank</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
