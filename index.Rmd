@@ -19,7 +19,7 @@ Do younger people prefer the Star Wars prequel movies more than the originals? I
 
 ## Data Visualization (Milestone 3)
 
-```{r}
+```{r, echo = FALSE}
 library(tidyverse)
 library(ggplot2)
 library(ggpubr)
@@ -41,7 +41,7 @@ StarWars <- as_tibble(StarWars) |>
 StarWars
 ```
 
-```{r}
+```{r, echo = FALSE}
 age_ep3_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
   ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
@@ -51,7 +51,8 @@ age_ep3_rank <- StarWars |>
        subtitle = "With 1 as best, 6 as worst",
        x = "Age Groups",
        y = "Ranking",
-       caption = "Among 1,186 Respondents")
+       caption = "Among 1,186 Respondents")  +
+  scale_y_reverse()
 age_ep3_rank
 ``` 
 
@@ -59,7 +60,7 @@ Based on this visualization, it appears that across all age groups, Star Wars: E
 
 ## Data Analysis (Milestone 4)
 
-```{r}
+```{r, echo = FALSE}
 age_ep1_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
   ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
@@ -69,7 +70,8 @@ age_ep1_rank <- StarWars |>
        subtitle = "With 1 as best, 6 as worst",
        x = "Age Groups",
        y = "Ranking",
-       caption = "Among 1,186 Respondents")
+       caption = "Among 1,186 Respondents")  +
+  scale_y_reverse()
 
 age_ep2_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
@@ -80,7 +82,8 @@ age_ep2_rank <- StarWars |>
        subtitle = "With 1 as best, 6 as worst",
        x = "Age Groups",
        y = "Ranking",
-       caption = "Among 1,186 Respondents")
+       caption = "Among 1,186 Respondents")  +
+  scale_y_reverse()
   
 age_ep4_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
@@ -91,7 +94,8 @@ age_ep4_rank <- StarWars |>
        subtitle = "With 1 as best, 6 as worst",
        x = "Age Groups",
        y = "Ranking",
-       caption = "Among 1,186 Respondents")
+       caption = "Among 1,186 Respondents")  +
+  scale_y_reverse()
   
 age_ep5_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
@@ -102,7 +106,8 @@ age_ep5_rank <- StarWars |>
        subtitle = "With 1 as best, 6 as worst",
        x = "Age Groups",
        y = "Ranking",
-       caption = "Among 1,186 Respondents")
+       caption = "Among 1,186 Respondents")  +
+  scale_y_reverse()
 
 age_ep6_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
@@ -113,7 +118,8 @@ age_ep6_rank <- StarWars |>
        subtitle = "With 1 as best, 6 as worst",
        x = "Age Groups",
        y = "Ranking",
-       caption = "Among 1,186 Respondents")
+       caption = "Among 1,186 Respondents") +
+  scale_y_reverse()
 
 ggarrange(age_ep1_rank, age_ep2_rank, age_ep3_rank, age_ep4_rank, age_ep5_rank, age_ep6_rank, ncol = 3, align = "v")
 ```
