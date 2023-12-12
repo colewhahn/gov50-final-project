@@ -4,7 +4,7 @@ author: "Cole Hahn"
 description: "Gov 50 Final Project"
 output:
   cleanrmd::html_document_clean:
-    theme: almond
+    theme: latex.css
     code_folding: true
     self_contained: false
     toc: true
