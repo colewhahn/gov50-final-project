@@ -1,28 +1,31 @@
 ---
-title: "Gov 50 Final Project"
+title: "What Your Age Says About Your Favorite Star Wars Movie"
 author: "Cole Hahn"
-description: "My final project"
+description: "Gov 50 Final Project"
 output:
   distill::distill_article:
     self_contained: false
+    toc: true
 ---
 
+## Introduction
+
+Do younger people prefer the Star Wars prequel movies more than the originals? In this study, I analyze the ages of respondents and which Star Wars movies they like the most. I hypothesize that if people are younger then they will prefer the prequel movies more than the originals because they grew up as the prequel movies were being released. For this analysis, I use data collected by Walt Hickey from FiveThirtyEight. This is interesting to investigate because it could say more about the attachment or nostalgia you may have with the films that you grew up with.
 
 
-## Project Thoughts (Milestone 1)
+## Data Summary
 
-I am interested in exploring data related to Taylor Swift's impact on benefiting the economy, voting behavior, or something related to movies.
+The data source I am using for this analysis is from Walt Hickey of FiveThirtyEight. All of the data was collected in a survey of 1,186 respondents, and Hickey measures many things including the rankings for each film, gender, age, income, education, and geographical location. For the purposes of this analysis, I will be using the rankings of the films and age variables. Additionally, my research design is **cross-sectional**, for I am reviewing the measures of the ages of respondents and their rankings of the films at the same point in time.
 
-## Proposal (Milestone 2)
+Specifically, the explanatory variable or independent variable of interest is the age group of the respondents in the survey. This is measured in four age groups: 18-29, 30-44, 45-60, and > 60. My outcome variable or dependent variable is how respondents ranked the 6 Star Wars movies. This is measured by rankings of 1 to 6 with 1 being their favorite film and 6 being their least favorite. If I observe that those in the younger age categories (18-29 and 30-44) ranked the prequel movies higher, this would support my hypothesis. However, if I observe the opposite or, for example, there is only strong support for the original movies among all age groups, this would be evidence against my hypothesis.
 
-Do younger people prefer the Star Wars prequel movies more than the originals? In this study, I plan to analyze respondents ages and which Star Wars movies they like the most. I hypothesize that if people are younger then they will prefer the prequel movies more than the originals because they grew up as the prequel movies were being released. For this analysis, I will be using data collected by Walt Hickey from FiveThirtyEight. The explanatory variable of interest is the age group of the respondents in the survey. This is measured in four age groups: 18-29, 30-44, 45-60, and > 60. My outcome variable is how respondents ranked the 6 Star Wars movies. This is measured by rankings of 1 to 6 with 1 being their favorite film and 6 being their least favorite. If I observe that those in the younger age category (18-29) ranked the prequel movies higher, this would support my hypothesis. However, if I observe the opposite and say, for example, there is only strong support for the original movies among all age groups, this would be evidence against my hypothesis.
+The following visualizations summarize the dependent variable, which is the rankings. Each graph shows the amount of responses for each ranking position for each movie: 1 is the best and 6 is the worst.  
 
-## Data Visualization (Milestone 3)
-
-```{r, echo = FALSE}
+```{r, code_folding=TRUE, results='hide'}
 library(tidyverse)
 library(ggplot2)
 library(ggpubr)
+library(ggthemes)
 load("StarWars.RData")
 StarWars <- as_tibble(StarWars) |>
   select(V1:V3, V10:V15, V34:V38) |>
@@ -38,94 +41,167 @@ StarWars <- as_tibble(StarWars) |>
          ep5_rank = as.integer(ep5_rank),
          ep6_rank = as.integer(ep6_rank)) |>
   na.omit()
-StarWars
+
+ep1_rank <- StarWars |>
+  count(ep1_rank) |>
+  ggplot(mapping = aes(x = ep1_rank, y = n)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Episode I Rank",
+       x = "Rankings",
+       y = "Number of Respondents") +
+  theme_stata()
+
+ep2_rank <- StarWars |>
+  count(ep2_rank) |>
+  ggplot(mapping = aes(x = ep2_rank, y = n)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Episode II Rank",
+       x = "Rankings",
+       y = "Number of Respondents") +
+  theme_stata()
+
+ep3_rank <- StarWars |>
+  count(ep3_rank) |>
+  ggplot(mapping = aes(x = ep3_rank, y = n)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Episode III Rank",
+       x = "Rankings",
+       y = "Number of Respondents") +
+  theme_stata()
+
+ep4_rank <- StarWars |>
+  count(ep4_rank) |>
+  ggplot(mapping = aes(x = ep4_rank, y = n)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Episode IV Rank",
+       x = "Rankings",
+       y = "Number of Respondents") +
+  theme_stata()
+
+ep5_rank <- StarWars |>
+  count(ep5_rank) |>
+  ggplot(mapping = aes(x = ep5_rank, y = n)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Episode V Rank",
+       x = "Rankings",
+       y = "Number of Respondents") +
+  theme_stata()
+
+ep6_rank <- StarWars |>
+  count(ep6_rank) |>
+  ggplot(mapping = aes(x = ep6_rank, y = n)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Episode VI Rank",
+       x = "Rankings",
+       y = "Number of Respondents") +
+  theme_stata()
+
+ggarrange(ep1_rank, ep2_rank, ep3_rank, ep4_rank, 
+          ep5_rank, ep6_rank, ncol = 2, align = "v")
 ```
 
-```{r, echo = FALSE}
-age_ep3_rank <- StarWars |>
-  filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
-  ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
-                       y = ep3_rank)) +
-  geom_boxplot(color = "indianred", fill = "steelblue1") +
-  labs(title = "Episode III Rank",
-       subtitle = "With 1 as best, 6 as worst",
-       x = "Age Groups",
-       y = "Ranking",
-       caption = "Among 1,186 Respondents")  +
-  scale_y_reverse()
-age_ep3_rank
-``` 
 
-Based on this visualization, it appears that across all age groups, Star Wars: Episode III is not often placed highly in the ranking of the films. However, those 18-29 and >60 place it higher than those 30-60.
+## The Results
 
-## Data Analysis (Milestone 4)
 
-```{r, echo = FALSE}
+
+```{r, code_folding=TRUE, results='hide'}
 age_ep1_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
   ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
                        y = ep1_rank)) +
-  geom_boxplot(color = "indianred", fill = "steelblue1") +
+  geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode I Rank",
-       subtitle = "With 1 as best, 6 as worst",
-       x = "Age Groups",
-       y = "Ranking",
-       caption = "Among 1,186 Respondents")  +
-  scale_y_reverse()
+       x = "Age Group",
+       y = "Rankings")  +
+  scale_y_reverse() +
+  theme_stata()
 
 age_ep2_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
   ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
                        y = ep2_rank)) +
-  geom_boxplot(color = "indianred", fill = "steelblue1") +
+  geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode II Rank",
-       subtitle = "With 1 as best, 6 as worst",
-       x = "Age Groups",
-       y = "Ranking",
-       caption = "Among 1,186 Respondents")  +
-  scale_y_reverse()
+       x = "Age Group",
+       y = "Rankings")  +
+  scale_y_reverse() +
+  theme_stata()
+
+age_ep3_rank <- StarWars |>
+  filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
+  ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
+                       y = ep3_rank)) +
+  geom_boxplot(color = "indianred4", fill = "steelblue") +
+  labs(title = "Episode III Rank",
+       x = "Age Group",
+       y = "Rankings")  +
+  scale_y_reverse() +
+  theme_stata()
   
 age_ep4_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
   ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
                        y = ep4_rank)) +
-  geom_boxplot(color = "indianred", fill = "steelblue1") +
+  geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode IV Rank",
-       subtitle = "With 1 as best, 6 as worst",
-       x = "Age Groups",
-       y = "Ranking",
-       caption = "Among 1,186 Respondents")  +
-  scale_y_reverse()
+       x = "Age Group",
+       y = "Rankings")  +
+  scale_y_reverse() +
+  theme_stata()
   
 age_ep5_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
   ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
                        y = ep5_rank)) +
-  geom_boxplot(color = "indianred", fill = "steelblue1") +
+  geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode V Rank",
-       subtitle = "With 1 as best, 6 as worst",
-       x = "Age Groups",
-       y = "Ranking",
-       caption = "Among 1,186 Respondents")  +
-  scale_y_reverse()
+       x = "Age Group",
+       y = "Rankings")  +
+  scale_y_reverse() +
+  theme_stata()
 
 age_ep6_rank <- StarWars |>
   filter(age == "18-29" | age == "30-44" | age == "45-60" | age == "> 60") |>
   ggplot(mapping = aes(x = factor(age, level = c("18-29", "30-44", "45-60", "> 60")),
                        y = ep6_rank)) +
-  geom_boxplot(color = "indianred", fill = "steelblue1") +
+  geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode VI Rank",
-       subtitle = "With 1 as best, 6 as worst",
-       x = "Age Groups",
-       y = "Ranking",
-       caption = "Among 1,186 Respondents") +
-  scale_y_reverse()
+       x = "Age Group",
+       y = "Rankings") +
+  scale_y_reverse() +
+  theme_stata()
 
-ggarrange(age_ep1_rank, age_ep2_rank, age_ep3_rank, age_ep4_rank, age_ep5_rank, age_ep6_rank, ncol = 3, align = "v")
+ggarrange(age_ep1_rank, age_ep2_rank, age_ep3_rank, age_ep4_rank, 
+          age_ep5_rank, age_ep6_rank, ncol = 2, align = "v")
+```
+```{r, code_folding=TRUE}
+ep1_lm <- lm(ep1_rank ~ age, data = StarWars)
+
+ep2_lm <- lm(ep2_rank ~ age, data = StarWars)
+
+ep3_lm <- lm(ep3_rank ~ age, data = StarWars)
+
+ep4_lm <- lm(ep4_rank ~ age, data = StarWars)
+
+ep5_lm <- lm(ep5_rank ~ age, data = StarWars)
+
+ep6_lm <- lm(ep6_rank ~ age, data = StarWars)
+
+var_labels <- c(
+  "(Intercept)" = "Intercept",
+  "age> 60" = "Age > 60",
+  "age18-29" = "Age 18-29",
+  "age30-44" = "Age 30-44",
+  "age45-60" = "Age 45-60")
+
+modelsummary::modelsummary(list(ep1_lm, ep2_lm, ep3_lm, ep4_lm, ep5_lm, ep6_lm),
+                           gof_map = NA,
+                           coef_rename = var_labels)
 ```
 
 Based on these visualizations, we can get a better sense of the correlation between age and which Star Wars movies are ranked higher. Looking at the graphs, it appears that there is not a strong correlation between age and ranking. In fact, among all age groups, it appears that episodes IV, V, and VI are generally ranked the highest. Meaning, the original trilogy is generally liked more than the prequels among everyone, regardless of age.
 
-
+## Conclusion
 
 
