@@ -1,24 +1,48 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
-  <meta name="generator" content="distill" />
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Cole Hahn" />
+  <title>What Your Age Says About Your Favorite Star Wars Movie</title>
 
-  <style type="text/css">
-  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
-  body {
-    visibility: hidden;
+<style type="text/css" charset="utf-8">
+/* cleanrmd basic defaults */
+body {
+  /* at least one is usually overridden by the theme, but these ensure the
+  body doesn't go all the way up to the screen edge */
+  margin: 0.5em auto;
+  padding: 0.5em;
+  max-width: 48em;
+}
+code, code * { font-family: inherit; }
+
+@media only screen and (max-width: 768px) {
+  body { max-width: 100%; }
+}
+</style>
+
+  
+  <link href="index_files/cleanrmd-0.1.1.9000/almond.css" rel="stylesheet" />
+  <script src="index_files/kePrint-0.0.1/kePrint.js"></script>
+  <link href="index_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<style type="text/css" charset="utf-8">
+/* cleanrmd overrides */
+img { max-width: 100%; }
+</style>
+
+
+
+<style type="text/css">
+  code {
+    white-space: pre;
   }
-  </style>
-
- <!--radix_placeholder_import_source-->
- <!--/radix_placeholder_import_source-->
-
-<style type="text/css">code{white-space: pre;}</style>
+  .sourceCode {
+    overflow: auto;
+  }
+</style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
@@ -85,1652 +109,268 @@ code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
-
-
-  <!--radix_placeholder_meta_tags-->
-  <title>What Your Age Says About Your Favorite Star Wars Movie</title>
-
-  <meta property="description" itemprop="description" content="Gov 50 Final Project"/>
-
-
-  <meta name="article:author" content="Cole Hahn"/>
-
-  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="What Your Age Says About Your Favorite Star Wars Movie"/>
-  <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Gov 50 Final Project"/>
-  <meta property="og:locale" content="en_US"/>
-
-  <!--  https://dev.twitter.com/cards/types/summary -->
-  <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="What Your Age Says About Your Favorite Star Wars Movie"/>
-  <meta property="twitter:description" content="Gov 50 Final Project"/>
-
-  <!--/radix_placeholder_meta_tags-->
-  <!--radix_placeholder_rmarkdown_metadata-->
-
-  <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","author","description","output"]}},"value":[{"type":"character","attributes":{},"value":["What Your Age Says About Your Favorite Star Wars Movie"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Cole Hahn"]}]}]},{"type":"character","attributes":{},"value":["Gov 50 Final Project"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
-  </script>
-  <!--/radix_placeholder_rmarkdown_metadata-->
-  
-  <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/figure-html5/unnamed-chunk-1-1.png","index_files/figure-html5/unnamed-chunk-1-2.png","index_files/figure-html5/unnamed-chunk-1-3.png","index_files/figure-html5/unnamed-chunk-2-1.png","index_files/figure-html5/unnamed-chunk-2-2.png","index_files/figure-html5/unnamed-chunk-2-3.png","index_files/figure-html5/unnamed-chunk-3-1.png","index_files/figure-html5/unnamed-chunk-3-2.png","index_files/header-attrs-2.17/header-attrs.js","index_files/header-attrs-2.24/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/kePrint-0.0.1/kePrint.js","index_files/lightable-0.0.1/lightable.css","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js"]}
-  </script>
-  <!--radix_placeholder_navigation_in_header-->
-  <!--/radix_placeholder_navigation_in_header-->
-  <!--radix_placeholder_distill-->
-
-  <style type="text/css">
-
-  body {
-    background-color: white;
-  }
-
-  .pandoc-table {
-    width: 100%;
-  }
-
-  .pandoc-table>caption {
-    margin-bottom: 10px;
-  }
-
-  .pandoc-table th:not([align]) {
-    text-align: left;
-  }
-
-  .pagedtable-footer {
-    font-size: 15px;
-  }
-
-  d-byline .byline {
-    grid-template-columns: 2fr 2fr;
-  }
-
-  d-byline .byline h3 {
-    margin-block-start: 1.5em;
-  }
-
-  d-byline .byline .authors-affiliations h3 {
-    margin-block-start: 0.5em;
-  }
-
-  .authors-affiliations .orcid-id {
-    width: 16px;
-    height:16px;
-    margin-left: 4px;
-    margin-right: 4px;
-    vertical-align: middle;
-    padding-bottom: 2px;
-  }
-
-  d-title .dt-tags {
-    margin-top: 1em;
-    grid-column: text;
-  }
-
-  .dt-tags .dt-tag {
-    text-decoration: none;
-    display: inline-block;
-    color: rgba(0,0,0,0.6);
-    padding: 0em 0.4em;
-    margin-right: 0.5em;
-    margin-bottom: 0.4em;
-    font-size: 70%;
-    border: 1px solid rgba(0,0,0,0.2);
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-
-  d-article table.gt_table td,
-  d-article table.gt_table th {
-    border-bottom: none;
-    font-size: 100%;
-  }
-
-  .html-widget {
-    margin-bottom: 2.0em;
-  }
-
-  .l-screen-inset {
-    padding-right: 16px;
-  }
-
-  .l-screen .caption {
-    margin-left: 10px;
-  }
-
-  .shaded {
-    background: rgb(247, 247, 247);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .shaded .html-widget {
-    margin-bottom: 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .shaded .shaded-content {
-    background: white;
-  }
-
-  .text-output {
-    margin-top: 0;
-    line-height: 1.5em;
-  }
-
-  .hidden {
-    display: none !important;
-  }
-
-  d-article {
-    padding-top: 2.5rem;
-    padding-bottom: 30px;
-  }
-
-  d-appendix {
-    padding-top: 30px;
-  }
-
-  d-article>p>img {
-    width: 100%;
-  }
-
-  d-article h2 {
-    margin: 1rem 0 1.5rem 0;
-  }
-
-  d-article h3 {
-    margin-top: 1.5rem;
-  }
-
-  d-article iframe {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 2.0em;
-    width: 100%;
-  }
-
-  /* Tweak code blocks */
-
-  d-article div.sourceCode code,
-  d-article pre code {
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  }
-
-  d-article pre,
-  d-article div.sourceCode,
-  d-article div.sourceCode pre {
-    overflow: auto;
-  }
-
-  d-article div.sourceCode {
-    background-color: white;
-  }
-
-  d-article div.sourceCode pre {
-    padding-left: 10px;
-    font-size: 12px;
-    border-left: 2px solid rgba(0,0,0,0.1);
-  }
-
-  d-article pre {
-    font-size: 12px;
-    color: black;
-    background: none;
-    margin-top: 0;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.5;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-  }
-
-  d-article pre a {
-    border-bottom: none;
-  }
-
-  d-article pre a:hover {
-    border-bottom: none;
-    text-decoration: underline;
-  }
-
-  d-article details {
-    grid-column: text;
-    margin-bottom: 0.8em;
-  }
-
-  @media(min-width: 768px) {
-
-  d-article pre,
-  d-article div.sourceCode,
-  d-article div.sourceCode pre {
-    overflow: visible !important;
-  }
-
-  d-article div.sourceCode pre {
-    padding-left: 18px;
-    font-size: 14px;
-  }
-
-  d-article pre {
-    font-size: 14px;
-  }
-
-  }
-
-  figure img.external {
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-    padding: 18px;
-    box-sizing: border-box;
-  }
-
-  /* CSS for d-contents */
-
-  .d-contents {
-    grid-column: text;
-    color: rgba(0,0,0,0.8);
-    font-size: 0.9em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    padding-bottom: 0.5em;
-    margin-bottom: 1em;
-    padding-left: 0.25em;
-    justify-self: start;
-  }
-
-  @media(min-width: 1000px) {
-    .d-contents.d-contents-float {
-      height: 0;
-      grid-column-start: 1;
-      grid-column-end: 4;
-      justify-self: center;
-      padding-right: 3em;
-      padding-left: 2em;
-    }
-  }
-
-  .d-contents nav h3 {
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 1em;
-  }
-
-  .d-contents li {
-    list-style-type: none
-  }
-
-  .d-contents nav > ul {
-    padding-left: 0;
-  }
-
-  .d-contents ul {
-    padding-left: 1em
-  }
-
-  .d-contents nav ul li {
-    margin-top: 0.6em;
-    margin-bottom: 0.2em;
-  }
-
-  .d-contents nav a {
-    font-size: 13px;
-    border-bottom: none;
-    text-decoration: none
-    color: rgba(0, 0, 0, 0.8);
-  }
-
-  .d-contents nav a:hover {
-    text-decoration: underline solid rgba(0, 0, 0, 0.6)
-  }
-
-  .d-contents nav > ul > li > a {
-    font-weight: 600;
-  }
-
-  .d-contents nav > ul > li > ul {
-    font-weight: inherit;
-  }
-
-  .d-contents nav > ul > li > ul > li {
-    margin-top: 0.2em;
-  }
-
-
-  .d-contents nav ul {
-    margin-top: 0;
-    margin-bottom: 0.25em;
-  }
-
-  .d-article-with-toc h2:nth-child(2) {
-    margin-top: 0;
-  }
-
-
-  /* Figure */
-
-  .figure {
-    position: relative;
-    margin-bottom: 2.5em;
-    margin-top: 1.5em;
-  }
-
-  .figure .caption {
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 12px;
-    line-height: 1.5em;
-  }
-
-  .figure img.external {
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-    padding: 18px;
-    box-sizing: border-box;
-  }
-
-  .figure .caption a {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  .figure .caption b,
-  .figure .caption strong, {
-    font-weight: 600;
-    color: rgba(0, 0, 0, 1.0);
-  }
-
-  /* Citations */
-
-  d-article .citation {
-    color: inherit;
-    cursor: inherit;
-  }
-
-  div.hanging-indent{
-    margin-left: 1em; text-indent: -1em;
-  }
-
-  /* Citation hover box */
-
-  .tippy-box[data-theme~=light-border] {
-    background-color: rgba(250, 250, 250, 0.95);
-  }
-
-  .tippy-content > p {
-    margin-bottom: 0;
-    padding: 2px;
-  }
-
-
-  /* Tweak 1000px media break to show more text */
-
-  @media(min-width: 1000px) {
-    .base-grid,
-    distill-header,
-    d-title,
-    d-abstract,
-    d-article,
-    d-appendix,
-    distill-appendix,
-    d-byline,
-    d-footnote-list,
-    d-citation-list,
-    distill-footer {
-      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
-      grid-column-gap: 16px;
-    }
-
-    .grid {
-      grid-column-gap: 16px;
-    }
-
-    d-article {
-      font-size: 1.06rem;
-      line-height: 1.7em;
-    }
-    figure .caption, .figure .caption, figure figcaption {
-      font-size: 13px;
-    }
-  }
-
-  @media(min-width: 1180px) {
-    .base-grid,
-    distill-header,
-    d-title,
-    d-abstract,
-    d-article,
-    d-appendix,
-    distill-appendix,
-    d-byline,
-    d-footnote-list,
-    d-citation-list,
-    distill-footer {
-      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
-      grid-column-gap: 32px;
-    }
-
-    .grid {
-      grid-column-gap: 32px;
-    }
-  }
-
-
-  /* Get the citation styles for the appendix (not auto-injected on render since
-     we do our own rendering of the citation appendix) */
-
-  d-appendix .citation-appendix,
-  .d-appendix .citation-appendix {
-    font-size: 11px;
-    line-height: 15px;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-    padding-left: 18px;
-    border: 1px solid rgba(0,0,0,0.1);
-    background: rgba(0, 0, 0, 0.02);
-    padding: 10px 18px;
-    border-radius: 3px;
-    color: rgba(150, 150, 150, 1);
-    overflow: hidden;
-    margin-top: -12px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  /* Include appendix styles here so they can be overridden */
-
-  d-appendix {
-    contain: layout style;
-    font-size: 0.8em;
-    line-height: 1.7em;
-    margin-top: 60px;
-    margin-bottom: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    color: rgba(0,0,0,0.5);
-    padding-top: 60px;
-    padding-bottom: 48px;
-  }
-
-  d-appendix h3 {
-    grid-column: page-start / text-start;
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 0;
-    color: rgba(0,0,0,0.65);
-  }
-
-  d-appendix h3 + * {
-    margin-top: 1em;
-  }
-
-  d-appendix ol {
-    padding: 0 0 0 15px;
-  }
-
-  @media (min-width: 768px) {
-    d-appendix ol {
-      padding: 0 0 0 30px;
-      margin-left: -30px;
-    }
-  }
-
-  d-appendix li {
-    margin-bottom: 1em;
-  }
-
-  d-appendix a {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  d-appendix > * {
-    grid-column: text;
-  }
-
-  d-appendix > d-footnote-list,
-  d-appendix > d-citation-list,
-  d-appendix > distill-appendix {
-    grid-column: screen;
-  }
-
-  /* Include footnote styles here so they can be overridden */
-
-  d-footnote-list {
-    contain: layout style;
-  }
-
-  d-footnote-list > * {
-    grid-column: text;
-  }
-
-  d-footnote-list a.footnote-backlink {
-    color: rgba(0,0,0,0.3);
-    padding-left: 0.5em;
-  }
-
-
-
-  /* Anchor.js */
-
-  .anchorjs-link {
-    /*transition: all .25s linear; */
-    text-decoration: none;
-    border-bottom: none;
-  }
-  *:hover > .anchorjs-link {
-    margin-left: -1.125em !important;
-    text-decoration: none;
-    border-bottom: none;
-  }
-
-  /* Social footer */
-
-  .social_footer {
-    margin-top: 30px;
-    margin-bottom: 0;
-    color: rgba(0,0,0,0.67);
-  }
-
-  .disqus-comments {
-    margin-right: 30px;
-  }
-
-  .disqus-comment-count {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-  }
-
-  #disqus_thread {
-    margin-top: 30px;
-  }
-
-  .article-sharing a {
-    border-bottom: none;
-    margin-right: 8px;
-  }
-
-  .article-sharing a:hover {
-    border-bottom: none;
-  }
-
-  .sidebar-section.subscribe {
-    font-size: 12px;
-    line-height: 1.6em;
-  }
-
-  .subscribe p {
-    margin-bottom: 0.5em;
-  }
-
-
-  .article-footer .subscribe {
-    font-size: 15px;
-    margin-top: 45px;
-  }
-
-
-  .sidebar-section.custom {
-    font-size: 12px;
-    line-height: 1.6em;
-  }
-
-  .custom p {
-    margin-bottom: 0.5em;
-  }
-
-  /* Styles for listing layout (hide title) */
-  .layout-listing d-title, .layout-listing .d-title {
-    display: none;
-  }
-
-  /* Styles for posts lists (not auto-injected) */
-
-
-  .posts-with-sidebar {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .posts-list .description h2,
-  .posts-list .description p {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  }
-
-  .posts-list .description h2 {
-    font-weight: 700;
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-
-  .posts-list h2.post-tag {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 12px;
-  }
-  .posts-list {
-    margin-top: 60px;
-    margin-bottom: 24px;
-  }
-
-  .posts-list .post-preview {
-    text-decoration: none;
-    overflow: hidden;
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 24px 0;
-  }
-
-  .post-preview-last {
-    border-bottom: none !important;
-  }
-
-  .posts-list .posts-list-caption {
-    grid-column: screen;
-    font-weight: 400;
-  }
-
-  .posts-list .post-preview h2 {
-    margin: 0 0 6px 0;
-    line-height: 1.2em;
-    font-style: normal;
-    font-size: 24px;
-  }
-
-  .posts-list .post-preview p {
-    margin: 0 0 12px 0;
-    line-height: 1.4em;
-    font-size: 16px;
-  }
-
-  .posts-list .post-preview .thumbnail {
-    box-sizing: border-box;
-    margin-bottom: 24px;
-    position: relative;
-    max-width: 500px;
-  }
-  .posts-list .post-preview img {
-    width: 100%;
-    display: block;
-  }
-
-  .posts-list .metadata {
-    font-size: 12px;
-    line-height: 1.4em;
-    margin-bottom: 18px;
-  }
-
-  .posts-list .metadata > * {
-    display: inline-block;
-  }
-
-  .posts-list .metadata .publishedDate {
-    margin-right: 2em;
-  }
-
-  .posts-list .metadata .dt-authors {
-    display: block;
-    margin-top: 0.3em;
-    margin-right: 2em;
-  }
-
-  .posts-list .dt-tags {
-    display: block;
-    line-height: 1em;
-  }
-
-  .posts-list .dt-tags .dt-tag {
-    display: inline-block;
-    color: rgba(0,0,0,0.6);
-    padding: 0.3em 0.4em;
-    margin-right: 0.2em;
-    margin-bottom: 0.4em;
-    font-size: 60%;
-    border: 1px solid rgba(0,0,0,0.2);
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-
-  .posts-list img {
-    opacity: 1;
-  }
-
-  .posts-list img[data-src] {
-    opacity: 0;
-  }
-
-  .posts-more {
-    clear: both;
-  }
-
-
-  .posts-sidebar {
-    font-size: 16px;
-  }
-
-  .posts-sidebar h3 {
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-
-  .sidebar-section {
-    margin-bottom: 30px;
-  }
-
-  .categories ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .categories li {
-    color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 0;
-  }
-
-  .categories li>a {
-    border-bottom: none;
-  }
-
-  .categories li>a:hover {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  }
-
-  .categories .active {
-    font-weight: 600;
-  }
-
-  .categories .category-count {
-    color: rgba(0, 0, 0, 0.4);
-  }
-
-
-  @media(min-width: 768px) {
-    .posts-list .post-preview h2 {
-      font-size: 26px;
-    }
-    .posts-list .post-preview .thumbnail {
-      float: right;
-      width: 30%;
-      margin-bottom: 0;
-    }
-    .posts-list .post-preview .description {
-      float: left;
-      width: 45%;
-    }
-    .posts-list .post-preview .metadata {
-      float: left;
-      width: 20%;
-      margin-top: 8px;
-    }
-    .posts-list .post-preview p {
-      margin: 0 0 12px 0;
-      line-height: 1.5em;
-      font-size: 16px;
-    }
-    .posts-with-sidebar .posts-list {
-      float: left;
-      width: 75%;
-    }
-    .posts-with-sidebar .posts-sidebar {
-      float: right;
-      width: 20%;
-      margin-top: 60px;
-      padding-top: 24px;
-      padding-bottom: 24px;
-    }
-  }
-
-
-  /* Improve display for browsers without grid (IE/Edge <= 15) */
-
-  .downlevel {
-    line-height: 1.6em;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    margin: 0;
-  }
-
-  .downlevel .d-title {
-    padding-top: 6rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .downlevel .d-title h1 {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.1em;
-    margin: 0 0 0.5rem;
-  }
-
-  .downlevel .d-title p {
-    font-weight: 300;
-    font-size: 1.2rem;
-    line-height: 1.55em;
-    margin-top: 0;
-  }
-
-  .downlevel .d-byline {
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    font-size: 0.8rem;
-    line-height: 1.8em;
-  }
-
-  .downlevel .section-separator {
-    border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .downlevel .d-article {
-    font-size: 1.06rem;
-    line-height: 1.7em;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-
-
-  .downlevel .d-appendix {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: none;
-    font-size: 0.8em;
-    line-height: 1.7em;
-    margin-bottom: 0;
-    color: rgba(0,0,0,0.5);
-    padding-top: 40px;
-    padding-bottom: 48px;
-  }
-
-  .downlevel .footnotes ol {
-    padding-left: 13px;
-  }
-
-  .downlevel .base-grid,
-  .downlevel .distill-header,
-  .downlevel .d-title,
-  .downlevel .d-abstract,
-  .downlevel .d-article,
-  .downlevel .d-appendix,
-  .downlevel .distill-appendix,
-  .downlevel .d-byline,
-  .downlevel .d-footnote-list,
-  .downlevel .d-citation-list,
-  .downlevel .distill-footer,
-  .downlevel .appendix-bottom,
-  .downlevel .posts-container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media(min-width: 768px) {
-    .downlevel .base-grid,
-    .downlevel .distill-header,
-    .downlevel .d-title,
-    .downlevel .d-abstract,
-    .downlevel .d-article,
-    .downlevel .d-appendix,
-    .downlevel .distill-appendix,
-    .downlevel .d-byline,
-    .downlevel .d-footnote-list,
-    .downlevel .d-citation-list,
-    .downlevel .distill-footer,
-    .downlevel .appendix-bottom,
-    .downlevel .posts-container {
-    padding-left: 150px;
-    padding-right: 150px;
-    max-width: 900px;
-  }
-  }
-
-  .downlevel pre code {
-    display: block;
-    border-left: 2px solid rgba(0, 0, 0, .1);
-    padding: 0 0 0 20px;
-    font-size: 14px;
-  }
-
-  .downlevel code, .downlevel pre {
-    color: black;
-    background: none;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.5;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-  }
-
-  .downlevel .posts-list .post-preview {
-    color: inherit;
-  }
-
-
-
-  </style>
-
-  <script type="application/javascript">
-
-  function is_downlevel_browser() {
-    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
-                                   window.navigator.userAgent)) {
-      return true;
-    } else {
-      return window.load_distill_framework === undefined;
-    }
-  }
-
-  // show body when load is complete
-  function on_load_complete() {
-
-    // add anchors
-    if (window.anchors) {
-      window.anchors.options.placement = 'left';
-      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
-    }
-
-
-    // set body to visible
-    document.body.style.visibility = 'visible';
-
-    // force redraw for leaflet widgets
-    if (window.HTMLWidgets) {
-      var maps = window.HTMLWidgets.findAll(".leaflet");
-      $.each(maps, function(i, el) {
-        var map = this.getMap();
-        map.invalidateSize();
-        map.eachLayer(function(layer) {
-          if (layer instanceof L.TileLayer)
-            layer.redraw();
-        });
-      });
-    }
-
-    // trigger 'shown' so htmlwidgets resize
-    $('d-article').trigger('shown');
-  }
-
-  function init_distill() {
-
-    init_common();
-
-    // create front matter
-    var front_matter = $('<d-front-matter></d-front-matter>');
-    $('#distill-front-matter').wrap(front_matter);
-
-    // create d-title
-    $('.d-title').changeElementType('d-title');
-
-    // create d-byline
-    var byline = $('<d-byline></d-byline>');
-    $('.d-byline').replaceWith(byline);
-
-    // create d-article
-    var article = $('<d-article></d-article>');
-    $('.d-article').wrap(article).children().unwrap();
-
-    // move posts container into article
-    $('.posts-container').appendTo($('d-article'));
-
-    // create d-appendix
-    $('.d-appendix').changeElementType('d-appendix');
-
-    // flag indicating that we have appendix items
-    var appendix = $('.appendix-bottom').children('h3').length > 0;
-
-    // replace footnotes with <d-footnote>
-    $('.footnote-ref').each(function(i, val) {
-      appendix = true;
-      var href = $(this).attr('href');
-      var id = href.replace('#', '');
-      var fn = $('#' + id);
-      var fn_p = $('#' + id + '>p');
-      fn_p.find('.footnote-back').remove();
-      var text = fn_p.html();
-      var dtfn = $('<d-footnote></d-footnote>');
-      dtfn.html(text);
-      $(this).replaceWith(dtfn);
-    });
-    // remove footnotes
-    $('.footnotes').remove();
-
-    // move refs into #references-listing
-    $('#references-listing').replaceWith($('#refs'));
-
-    $('h1.appendix, h2.appendix').each(function(i, val) {
-      $(this).changeElementType('h3');
-    });
-    $('h3.appendix').each(function(i, val) {
-      var id = $(this).attr('id');
-      $('.d-contents a[href="#' + id + '"]').parent().remove();
-      appendix = true;
-      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
-    });
-
-    // show d-appendix if we have appendix content
-    $("d-appendix").css('display', appendix ? 'grid' : 'none');
-
-    // localize layout chunks to just output
-    $('.layout-chunk').each(function(i, val) {
-
-      // capture layout
-      var layout = $(this).attr('data-layout');
-
-      // apply layout to markdown level block elements
-      var elements = $(this).children().not('details, div.sourceCode, pre, script');
-      elements.each(function(i, el) {
-        var layout_div = $('<div class="' + layout + '"></div>');
-        if (layout_div.hasClass('shaded')) {
-          var shaded_content = $('<div class="shaded-content"></div>');
-          $(this).wrap(shaded_content);
-          $(this).parent().wrap(layout_div);
-        } else {
-          $(this).wrap(layout_div);
-        }
-      });
-
-
-      // unwrap the layout-chunk div
-      $(this).children().unwrap();
-    });
-
-    // remove code block used to force  highlighting css
-    $('.distill-force-highlighting-css').parent().remove();
-
-    // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
-
-    // load distill framework
-    load_distill_framework();
-
-    // wait for window.distillRunlevel == 4 to do post processing
-    function distill_post_process() {
-
-      if (!window.distillRunlevel || window.distillRunlevel < 4)
-        return;
-
-      // hide author/affiliations entirely if we have no authors
-      var front_matter = JSON.parse($("#distill-front-matter").html());
-      var have_authors = front_matter.authors && front_matter.authors.length > 0;
-      if (!have_authors)
-        $('d-byline').addClass('hidden');
-
-      // article with toc class
-      $('.d-contents').parent().addClass('d-article-with-toc');
-
-      // strip links that point to #
-      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
-
-      // add orcid ids
-      $('.authors-affiliations').find('.author').each(function(i, el) {
-        var orcid_id = front_matter.authors[i].orcidID;
-        if (orcid_id) {
-          var a = $('<a></a>');
-          a.attr('href', 'https://orcid.org/' + orcid_id);
-          var img = $('<img></img>');
-          img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
-          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
-          a.append(img);
-          $(this).append(a);
-        }
-      });
-
-      // hide elements of author/affiliations grid that have no value
-      function hide_byline_column(caption) {
-        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+<script>
+// remove everything from pandoc code styles _except_ for 'code span' colors
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      if (/^code span/.test(rule.selectorText)) {
+        j++;
+        continue;
       }
-
-      // affiliations
-      var have_affiliations = false;
-      for (var i = 0; i<front_matter.authors.length; ++i) {
-        var author = front_matter.authors[i];
-        if (author.affiliation !== "&nbsp;") {
-          have_affiliations = true;
-          break;
-        }
-      }
-      if (!have_affiliations)
-        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
-
-      // published date
-      if (!front_matter.publishedDate)
-        hide_byline_column("Published");
-
-      // document object identifier
-      var doi = $('d-byline').find('h3:contains("DOI")');
-      var doi_p = doi.next().empty();
-      if (!front_matter.doi) {
-        // if we have a citation and valid citationText then link to that
-        if ($('#citation').length > 0 && front_matter.citationText) {
-          doi.html('Citation');
-          $('<a href="#citation"></a>')
-            .text(front_matter.citationText)
-            .appendTo(doi_p);
-        } else {
-          hide_byline_column("DOI");
-        }
-      } else {
-        $('<a></a>')
-           .attr('href', "https://doi.org/" + front_matter.doi)
-           .html(front_matter.doi)
-           .appendTo(doi_p);
-      }
-
-       // change plural form of authors/affiliations
-      if (front_matter.authors.length === 1) {
-        var grid = $('.authors-affiliations');
-        grid.children('h3:contains("Authors")').text('Author');
-        grid.children('h3:contains("Affiliations")').text('Affiliation');
-      }
-
-      // remove d-appendix and d-footnote-list local styles
-      $('d-appendix > style:first-child').remove();
-      $('d-footnote-list > style:first-child').remove();
-
-      // move appendix-bottom entries to the bottom
-      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
-      $('.appendix-bottom').remove();
-
-      // hoverable references
-      $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
-          $(this).html(fn.shadowRoot.querySelector("sup"))
-          $(this).id = fn.id
-          fn.remove()
-        }
-        var refs = $(this).attr('data-cites').split(" ");
-        var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
-        }).join("\n");
-        window.tippy(this, {
-          allowHTML: true,
-          content: refHtml,
-          maxWidth: 500,
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start'
-        });
-      });
-
-      // fix footnotes in tables (#411)
-      // replacing broken distill.pub feature
-      $('table d-footnote').each(function() {
-        // we replace internal showAtNode methode which is triggered when hovering a footnote
-        this.hoverBox.showAtNode = function(node) {
-          // ported from https://github.com/distillpub/template/pull/105/files
-          calcOffset = function(elem) {
-              let x = elem.offsetLeft;
-              let y = elem.offsetTop;
-              // Traverse upwards until an `absolute` element is found or `elem`
-              // becomes null.
-              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
-                  x += elem.offsetLeft;
-                  y += elem.offsetTop;
-              }
-
-              return { left: x, top: y };
-          }
-          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
-          const bbox = node.getBoundingClientRect();
-          const offset = calcOffset(node);
-          this.show([offset.left + bbox.width, offset.top + bbox.height]);
-        }
-      })
-
-      // clear polling timer
-      clearInterval(tid);
-
-      // show body now that everything is ready
-      on_load_complete();
+      sheets[i].deleteRule(j);
     }
-
-    var tid = setInterval(distill_post_process, 50);
-    distill_post_process();
-
   }
+})();
+</script>
 
-  function init_downlevel() {
-
-    init_common();
-
-     // insert hr after d-title
-    $('.d-title').after($('<hr class="section-separator"/>'));
-
-    // check if we have authors
-    var front_matter = JSON.parse($("#distill-front-matter").html());
-    var have_authors = front_matter.authors && front_matter.authors.length > 0;
-
-    // manage byline/border
-    if (!have_authors)
-      $('.d-byline').remove();
-    $('.d-byline').after($('<hr class="section-separator"/>'));
-    $('.d-byline a').remove();
-
-    // remove toc
-    $('.d-contents').remove();
-
-    // move appendix elements
-    $('h1.appendix, h2.appendix').each(function(i, val) {
-      $(this).changeElementType('h3');
-    });
-    $('h3.appendix').each(function(i, val) {
-      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
-    });
-
-
-    // inject headers into references and footnotes
-    var refs_header = $('<h3></h3>');
-    refs_header.text('References');
-    $('#refs').prepend(refs_header);
-
-    var footnotes_header = $('<h3></h3');
-    footnotes_header.text('Footnotes');
-    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
-
-    // move appendix-bottom entries to the bottom
-    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
-    $('.appendix-bottom').remove();
-
-    // remove appendix if it's empty
-    if ($('.d-appendix').children().length === 0)
-      $('.d-appendix').remove();
-
-    // prepend separator above appendix
-    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
-
-    // trim code
-    $('pre>code').each(function(i, val) {
-      $(this).html($.trim($(this).html()));
-    });
-
-    // move posts-container right before article
-    $('.posts-container').insertBefore($('.d-article'));
-
-    $('body').addClass('downlevel');
-
-    on_load_complete();
-  }
-
-
-  function init_common() {
-
-    // jquery plugin to change element types
-    (function($) {
-      $.fn.changeElementType = function(newType) {
-        var attrs = {};
-
-        $.each(this[0].attributes, function(idx, attr) {
-          attrs[attr.nodeName] = attr.nodeValue;
-        });
-
-        this.replaceWith(function() {
-          return $("<" + newType + "/>", attrs).append($(this).contents());
-        });
-      };
-    })(jQuery);
-
-    // prevent underline for linked images
-    $('a > img').parent().css({'border-bottom' : 'none'});
-
-    // mark non-body figures created by knitr chunks as 100% width
-    $('.layout-chunk').each(function(i, val) {
-      var figures = $(this).find('img, .html-widget');
-      // ignore leaflet img layers (#106)
-      figures = figures.filter(':not(img[class*="leaflet"])')
-      if ($(this).attr('data-layout') !== "l-body") {
-        figures.css('width', '100%');
-      } else {
-        figures.css('max-width', '100%');
-        figures.filter("[width]").each(function(i, val) {
-          var fig = $(this);
-          fig.css('width', fig.attr('width') + 'px');
-        });
-
-      }
-    });
-
-    // auto-append index.html to post-preview links in file: protocol
-    // and in rstudio ide preview
-    $('.post-preview').each(function(i, val) {
-      if (window.location.protocol === "file:")
-        $(this).attr('href', $(this).attr('href') + "index.html");
-    });
-
-    // get rid of index.html references in header
-    if (window.location.protocol !== "file:") {
-      $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
-      });
-    }
-
-    // add class to pandoc style tables
-    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
-    $('.kable-table').children('table').addClass('pandoc-table');
-
-    // add figcaption style to table captions
-    $('caption').parent('table').addClass("figcaption");
-
-    // initialize posts list
-    if (window.init_posts_list)
-      window.init_posts_list();
-
-    // implmement disqus comment link
-    $('.disqus-comment-count').click(function() {
-      window.headroom_prevent_pin = true;
-      $('#disqus_thread').toggleClass('hidden');
-      if (!$('#disqus_thread').hasClass('hidden')) {
-        var offset = $(this).offset();
-        $(window).resize();
-        $('html, body').animate({
-          scrollTop: offset.top - 35
-        });
-      }
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    if (is_downlevel_browser())
-      init_downlevel();
-    else
-      window.addEventListener('WebComponentsReady', init_distill);
-  });
-
-  </script>
-
-  <!--/radix_placeholder_distill-->
-  <script src="index_files/header-attrs-2.24/header-attrs.js"></script>
-  <script src="index_files/kePrint-0.0.1/kePrint.js"></script>
-  <link href="index_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
-  <script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <script src="index_files/popper-2.6.0/popper.min.js"></script>
-  <link href="index_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="index_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="index_files/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="index_files/anchor-4.2.2/anchor.min.js"></script>
-  <script src="index_files/bowser-1.9.3/bowser.min.js"></script>
-  <script src="index_files/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="index_files/distill-2.2.21/template.v2.js"></script>
-  <!--radix_placeholder_site_in_header-->
-  <!--/radix_placeholder_site_in_header-->
+<style>
+code, pre { overflow: auto; }
+pre code, pre code:not([class]) { white-space: unset; }
+</style>
 
 
 </head>
-
 <body>
 
-<!--radix_placeholder_front_matter-->
 
-<script id="distill-front-matter" type="text/json">
-{"title":"What Your Age Says About Your Favorite Star Wars Movie","description":"Gov 50 Final Project","authors":[{"author":"Cole Hahn","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}]}
-</script>
+<main>
+<header>
+<h1 id="title" class="toc-ignore">What Your Age Says About Your Favorite
+Star Wars Movie</h1>
+<p id="author">Cole Hahn</p>
 
-<!--/radix_placeholder_front_matter-->
-<!--radix_placeholder_navigation_before_body-->
-<!--/radix_placeholder_navigation_before_body-->
-<!--radix_placeholder_site_before_body-->
-<!--/radix_placeholder_site_before_body-->
-
-<div class="d-title">
-<h1>What Your Age Says About Your Favorite Star Wars Movie</h1>
-<!--radix_placeholder_categories-->
-<!--/radix_placeholder_categories-->
-<p>Gov 50 Final Project</p>
-</div>
-
-<div class="d-byline">
-  
-  Cole Hahn
-  
-
-</div>
-
-<div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
+</header>
 <ul>
 <li><a href="#introduction" id="toc-introduction">Introduction</a></li>
 <li><a href="#data-summary" id="toc-data-summary">Data Summary</a></li>
 <li><a href="#the-results" id="toc-the-results">The Results</a></li>
 <li><a href="#conclusion" id="toc-conclusion">Conclusion</a></li>
 </ul>
-</nav>
-</div>
+
 <h2 id="introduction">Introduction</h2>
-<p>Do younger people prefer the Star Wars prequel movies more than the originals? In this study, I analyze the ages of respondents and which Star Wars movies they like the most. I hypothesize that if people are younger then they will prefer the prequel movies more than the originals because they grew up as the prequel movies were being released. For this analysis, I use data collected by Walt Hickey from FiveThirtyEight. This is interesting to investigate because it could say more about the attachment or nostalgia you may have with the films that you grew up with.</p>
+<p>Do younger people prefer the Star Wars prequel movies more than the
+originals? In this study, I analyze the ages of respondents and which
+Star Wars movies they like the most. I hypothesize that if people are
+younger then they will prefer the prequel movies more than the
+originals, for they grew up as the prequel movies were being released.
+For this analysis, I use data collected by Walt Hickey from
+FiveThirtyEight. This is interesting to investigate because it could say
+more about the attachment or nostalgia people may have with the films
+that they grew up with.</p>
 <h2 id="data-summary">Data Summary</h2>
-<p>The data source I am using for this analysis is from Walt Hickey of FiveThirtyEight. All of the data was collected in a survey of 1,186 respondents, and Hickey measures many things including the rankings for each film, gender, age, income, education, and geographical location. For the purposes of this analysis, I will be using the rankings of the films and age variables. Additionally, my research design is <strong>cross-sectional</strong>, for I am reviewing the measures of the ages of respondents and their rankings of the films at the same point in time.</p>
-<p>Specifically, the explanatory variable or independent variable of interest is the age group of the respondents in the survey. This is measured in four age groups: 18-29, 30-44, 45-60, and &gt; 60. My outcome variable or dependent variable is how respondents ranked the 6 Star Wars movies. This is measured by rankings of 1 to 6 with 1 being their favorite film and 6 being their least favorite. If I observe that those in the younger age categories (18-29 and 30-44) ranked the prequel movies higher, this would support my hypothesis. However, if I observe the opposite or, for example, there is only strong support for the original movies among all age groups, this would be evidence against my hypothesis.</p>
-<p>The following visualizations summarize the dependent variable, which is the rankings. Each graph shows the amount of responses for each ranking position for each movie: 1 is the best and 6 is the worst.</p>
-<div class="layout-chunk" data-layout="l-body">
-<details>
-<summary>
-Show code
-</summary>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://tidyverse.tidyverse.org'>tidyverse</a></span><span class='op'>)</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://ggplot2.tidyverse.org'>ggplot2</a></span><span class='op'>)</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://rpkgs.datanovia.com/ggpubr/'>ggpubr</a></span><span class='op'>)</span></span>
-<span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/jrnold/ggthemes'>ggthemes</a></span><span class='op'>)</span></span>
-<span><span class='fu'><a href='https://rdrr.io/r/base/load.html'>load</a></span><span class='op'>(</span><span class='st'>"StarWars.RData"</span><span class='op'>)</span></span>
-<span><span class='va'>StarWars</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://tibble.tidyverse.org/reference/as_tibble.html'>as_tibble</a></span><span class='op'>(</span><span class='va'>StarWars</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/select.html'>select</a></span><span class='op'>(</span><span class='va'>V1</span><span class='op'>:</span><span class='va'>V3</span>, <span class='va'>V10</span><span class='op'>:</span><span class='va'>V15</span>, <span class='va'>V34</span><span class='op'>:</span><span class='va'>V38</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/rename.html'>rename</a></span><span class='op'>(</span>respondent_id <span class='op'>=</span> <span class='va'>V1</span>, seen_any_film <span class='op'>=</span> <span class='va'>V2</span>, fan <span class='op'>=</span> <span class='va'>V3</span>, ep1_rank <span class='op'>=</span> <span class='va'>V10</span>, </span>
-<span>         ep2_rank <span class='op'>=</span> <span class='va'>V11</span>, ep3_rank <span class='op'>=</span> <span class='va'>V12</span>, ep4_rank <span class='op'>=</span> <span class='va'>V13</span>, ep5_rank <span class='op'>=</span> <span class='va'>V14</span>, </span>
-<span>         ep6_rank <span class='op'>=</span> <span class='va'>V15</span>, gender <span class='op'>=</span> <span class='va'>V34</span>, age <span class='op'>=</span> <span class='va'>V35</span>, income <span class='op'>=</span> <span class='va'>V36</span>, </span>
-<span>         education <span class='op'>=</span> <span class='va'>V37</span>, location <span class='op'>=</span> <span class='va'>V38</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/slice.html'>slice</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1</span>, <span class='op'>-</span><span class='fl'>2</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>mutate</a></span><span class='op'>(</span>ep1_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep1_rank</span><span class='op'>)</span>,</span>
-<span>         ep2_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep2_rank</span><span class='op'>)</span>,</span>
-<span>         ep3_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep3_rank</span><span class='op'>)</span>,</span>
-<span>         ep4_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep4_rank</span><span class='op'>)</span>,</span>
-<span>         ep5_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep5_rank</span><span class='op'>)</span>,</span>
-<span>         ep6_rank <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='va'>ep6_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/r/stats/na.fail.html'>na.omit</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep1_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>ep1_rank</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>ep1_rank</span>, y <span class='op'>=</span> <span class='va'>n</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode I Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Rankings"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Number of Respondents"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep2_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>ep2_rank</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>ep2_rank</span>, y <span class='op'>=</span> <span class='va'>n</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode II Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Rankings"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Number of Respondents"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep3_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>ep3_rank</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>ep3_rank</span>, y <span class='op'>=</span> <span class='va'>n</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode III Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Rankings"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Number of Respondents"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep4_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>ep4_rank</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>ep4_rank</span>, y <span class='op'>=</span> <span class='va'>n</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode IV Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Rankings"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Number of Respondents"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep5_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>ep5_rank</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>ep5_rank</span>, y <span class='op'>=</span> <span class='va'>n</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode V Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Rankings"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Number of Respondents"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep6_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/count.html'>count</a></span><span class='op'>(</span><span class='va'>ep6_rank</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>ep6_rank</span>, y <span class='op'>=</span> <span class='va'>n</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_bar.html'>geom_col</a></span><span class='op'>(</span>fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode VI Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Rankings"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Number of Respondents"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='fu'><a href='https://rpkgs.datanovia.com/ggpubr/reference/ggarrange.html'>ggarrange</a></span><span class='op'>(</span><span class='va'>ep1_rank</span>, <span class='va'>ep2_rank</span>, <span class='va'>ep3_rank</span>, <span class='va'>ep4_rank</span>, </span>
-<span>          <span class='va'>ep5_rank</span>, <span class='va'>ep6_rank</span>, ncol <span class='op'>=</span> <span class='fl'>2</span>, align <span class='op'>=</span> <span class='st'>"v"</span><span class='op'>)</span></span></code></pre>
-</div>
-</details>
-<p><img src="index_files/figure-html5/unnamed-chunk-1-1.png" width="624" /><img src="index_files/figure-html5/unnamed-chunk-1-2.png" width="624" /><img src="index_files/figure-html5/unnamed-chunk-1-3.png" width="624" /></p>
-</div>
+<p>The data source I am using for this analysis is from Walt Hickey of
+FiveThirtyEight. All of the data was collected in a survey of 1,186
+respondents, and Hickey measured the ranking for each film, gender, age,
+income, education, and geographical location. For the purposes of this
+analysis, I will be using the ranking of the films and age variables.
+Additionally, my research design is <strong>cross-sectional</strong>,
+for I am reviewing the measures of the ages of respondents and their
+rankings of the films at the same point in time.</p>
+<p>Specifically, the explanatory variable or independent variable of
+interest is the age group of the respondents in the survey. This is
+measured in four age groups: 18-29, 30-44, 45-60, and &gt; 60. My
+outcome variable or dependent variable is how respondents ranked the 6
+Star Wars movies. This is measured by rankings of 1 to 6, with 1 being
+their favorite film and 6 being their least favorite. If I observe that
+those in the younger age categories (18-29 and 30-44) ranked the prequel
+movies higher, this would support my hypothesis. However, if I observe
+the opposite or, for example, there is only strong support for the
+original movies among all age groups, this would be evidence against my
+hypothesis.</p>
+<p>The following visualizations summarize the dependent variable, which
+is the rankings. Each graph shows the amount of responses for each
+ranking position for each movie: 1 is the best and 6 is the worst.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
+<pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+## ✔ dplyr     1.1.3     ✔ readr     2.1.4
+## ✔ forcats   1.0.0     ✔ stringr   1.5.0
+## ✔ ggplot2   3.4.3     ✔ tibble    3.2.1
+## ✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+## ✔ purrr     1.0.2     
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">&quot;StarWars.RData&quot;</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>StarWars <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(StarWars) <span class="sc">|&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(V1<span class="sc">:</span>V3, V10<span class="sc">:</span>V15, V34<span class="sc">:</span>V38) <span class="sc">|&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">respondent_id =</span> V1, <span class="at">seen_any_film =</span> V2, <span class="at">fan =</span> V3, <span class="at">ep1_rank =</span> V10, </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">ep2_rank =</span> V11, <span class="at">ep3_rank =</span> V12, <span class="at">ep4_rank =</span> V13, <span class="at">ep5_rank =</span> V14, </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">ep6_rank =</span> V15, <span class="at">gender =</span> V34, <span class="at">age =</span> V35, <span class="at">income =</span> V36, </span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">education =</span> V37, <span class="at">location =</span> V38) <span class="sc">|&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="sc">-</span><span class="dv">2</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ep1_rank =</span> <span class="fu">as.integer</span>(ep1_rank),</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>         <span class="at">ep2_rank =</span> <span class="fu">as.integer</span>(ep2_rank),</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>         <span class="at">ep3_rank =</span> <span class="fu">as.integer</span>(ep3_rank),</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">ep4_rank =</span> <span class="fu">as.integer</span>(ep4_rank),</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>         <span class="at">ep5_rank =</span> <span class="fu">as.integer</span>(ep5_rank),</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>         <span class="at">ep6_rank =</span> <span class="fu">as.integer</span>(ep6_rank)) <span class="sc">|&gt;</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>()</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>ep1_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ep1_rank) <span class="sc">|&gt;</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> ep1_rank, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode I Rank&quot;</span>,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Ranking&quot;</span>,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Number of Respondents&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>ep2_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ep2_rank) <span class="sc">|&gt;</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> ep2_rank, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode II Rank&quot;</span>,</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Ranking&quot;</span>,</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Number of Respondents&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>ep3_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ep3_rank) <span class="sc">|&gt;</span></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> ep3_rank, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode III Rank&quot;</span>,</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Ranking&quot;</span>,</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Number of Respondents&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>ep4_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ep4_rank) <span class="sc">|&gt;</span></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> ep4_rank, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode IV Rank&quot;</span>,</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Ranking&quot;</span>,</span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Number of Respondents&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a>ep5_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ep5_rank) <span class="sc">|&gt;</span></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> ep5_rank, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode V Rank&quot;</span>,</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Ranking&quot;</span>,</span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Number of Respondents&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a>ep6_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ep6_rank) <span class="sc">|&gt;</span></span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> ep6_rank, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode VI Rank&quot;</span>,</span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Ranking&quot;</span>,</span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Number of Respondents&quot;</span>) <span class="sc">+</span></span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a><span class="fu">ggarrange</span>(ep1_rank, ep2_rank, ep3_rank, ep4_rank, </span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a>          ep5_rank, ep6_rank, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">align =</span> <span class="st">&quot;v&quot;</span>)</span></code></pre></div>
+<p><img src="index_files/figure-html5/unnamed-chunk-1-1.png" width="960" /><img src="index_files/figure-html5/unnamed-chunk-1-2.png" width="960" /><img src="index_files/figure-html5/unnamed-chunk-1-3.png" width="960" /></p>
 <h2 id="the-results">The Results</h2>
-<div class="layout-chunk" data-layout="l-body">
-<details>
-<summary>
-Show code
-</summary>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>age_ep1_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
-<span>                       y <span class='op'>=</span> <span class='va'>ep1_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred4"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode I Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Age Group"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Rankings"</span><span class='op'>)</span>  <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_reverse</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>age_ep2_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
-<span>                       y <span class='op'>=</span> <span class='va'>ep2_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred4"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode II Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Age Group"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Rankings"</span><span class='op'>)</span>  <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_reverse</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>age_ep3_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
-<span>                       y <span class='op'>=</span> <span class='va'>ep3_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred4"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode III Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Age Group"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Rankings"</span><span class='op'>)</span>  <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_reverse</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span>  </span>
-<span><span class='va'>age_ep4_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
-<span>                       y <span class='op'>=</span> <span class='va'>ep4_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred4"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode IV Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Age Group"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Rankings"</span><span class='op'>)</span>  <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_reverse</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span>  </span>
-<span><span class='va'>age_ep5_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
-<span>                       y <span class='op'>=</span> <span class='va'>ep5_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred4"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode V Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Age Group"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Rankings"</span><span class='op'>)</span>  <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_reverse</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>age_ep6_rank</span> <span class='op'>&lt;-</span> <span class='va'>StarWars</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>age</span> <span class='op'>==</span> <span class='st'>"18-29"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"30-44"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"45-60"</span> <span class='op'>|</span> <span class='va'>age</span> <span class='op'>==</span> <span class='st'>"&gt; 60"</span><span class='op'>)</span> <span class='op'>|&gt;</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span><span class='op'>(</span>mapping <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>age</span>, level <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"18-29"</span>, <span class='st'>"30-44"</span>, <span class='st'>"45-60"</span>, <span class='st'>"&gt; 60"</span><span class='op'>)</span><span class='op'>)</span>,</span>
-<span>                       y <span class='op'>=</span> <span class='va'>ep6_rank</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_boxplot.html'>geom_boxplot</a></span><span class='op'>(</span>color <span class='op'>=</span> <span class='st'>"indianred4"</span>, fill <span class='op'>=</span> <span class='st'>"steelblue"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"Episode VI Rank"</span>,</span>
-<span>       x <span class='op'>=</span> <span class='st'>"Age Group"</span>,</span>
-<span>       y <span class='op'>=</span> <span class='st'>"Rankings"</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/scale_continuous.html'>scale_y_reverse</a></span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://rdrr.io/pkg/ggthemes/man/theme_stata.html'>theme_stata</a></span><span class='op'>(</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='fu'><a href='https://rpkgs.datanovia.com/ggpubr/reference/ggarrange.html'>ggarrange</a></span><span class='op'>(</span><span class='va'>age_ep1_rank</span>, <span class='va'>age_ep2_rank</span>, <span class='va'>age_ep3_rank</span>, <span class='va'>age_ep4_rank</span>, </span>
-<span>          <span class='va'>age_ep5_rank</span>, <span class='va'>age_ep6_rank</span>, ncol <span class='op'>=</span> <span class='fl'>2</span>, align <span class='op'>=</span> <span class='st'>"v"</span><span class='op'>)</span></span></code></pre>
-</div>
-</details>
-<p><img src="index_files/figure-html5/unnamed-chunk-2-1.png" width="624" /><img src="index_files/figure-html5/unnamed-chunk-2-2.png" width="624" /><img src="index_files/figure-html5/unnamed-chunk-2-3.png" width="624" /></p>
-</div>
-<div class="layout-chunk" data-layout="l-body">
-<details>
-<summary>
-Show code
-</summary>
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>ep1_lm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>ep1_rank</span> <span class='op'>~</span> <span class='va'>age</span>, data <span class='op'>=</span> <span class='va'>StarWars</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep2_lm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>ep2_rank</span> <span class='op'>~</span> <span class='va'>age</span>, data <span class='op'>=</span> <span class='va'>StarWars</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep3_lm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>ep3_rank</span> <span class='op'>~</span> <span class='va'>age</span>, data <span class='op'>=</span> <span class='va'>StarWars</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep4_lm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>ep4_rank</span> <span class='op'>~</span> <span class='va'>age</span>, data <span class='op'>=</span> <span class='va'>StarWars</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep5_lm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>ep5_rank</span> <span class='op'>~</span> <span class='va'>age</span>, data <span class='op'>=</span> <span class='va'>StarWars</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>ep6_lm</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/lm.html'>lm</a></span><span class='op'>(</span><span class='va'>ep6_rank</span> <span class='op'>~</span> <span class='va'>age</span>, data <span class='op'>=</span> <span class='va'>StarWars</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='va'>var_labels</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span></span>
-<span>  <span class='st'>"(Intercept)"</span> <span class='op'>=</span> <span class='st'>"Intercept"</span>,</span>
-<span>  <span class='st'>"age&gt; 60"</span> <span class='op'>=</span> <span class='st'>"Age &gt; 60"</span>,</span>
-<span>  <span class='st'>"age18-29"</span> <span class='op'>=</span> <span class='st'>"Age 18-29"</span>,</span>
-<span>  <span class='st'>"age30-44"</span> <span class='op'>=</span> <span class='st'>"Age 30-44"</span>,</span>
-<span>  <span class='st'>"age45-60"</span> <span class='op'>=</span> <span class='st'>"Age 45-60"</span><span class='op'>)</span></span>
-<span></span>
-<span><span class='fu'>modelsummary</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/modelsummary/man/modelsummary.html'>modelsummary</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='va'>ep1_lm</span>, <span class='va'>ep2_lm</span>, <span class='va'>ep3_lm</span>, <span class='va'>ep4_lm</span>, <span class='va'>ep5_lm</span>, <span class='va'>ep6_lm</span><span class='op'>)</span>,</span>
-<span>                           gof_map <span class='op'>=</span> <span class='cn'>NA</span>,</span>
-<span>                           coef_rename <span class='op'>=</span> <span class='va'>var_labels</span><span class='op'>)</span></span></code></pre>
-</div>
-</details>
+<p>The following boxplots show the correlation between age and the
+ranking of the films. Following the boxplots, there is a table showing
+the regression model with each film’s ranking serving as the main
+coefficient of interest.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>age_ep1_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(age <span class="sc">==</span> <span class="st">&quot;18-29&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;30-44&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;45-60&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;&gt; 60&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(age, <span class="at">level =</span> <span class="fu">c</span>(<span class="st">&quot;18-29&quot;</span>, <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;45-60&quot;</span>, <span class="st">&quot;&gt; 60&quot;</span>)),</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">y =</span> ep1_rank)) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">color =</span> <span class="st">&quot;indianred4&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode I Rank&quot;</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Age Group&quot;</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Ranking&quot;</span>)  <span class="sc">+</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>() <span class="sc">+</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>age_ep2_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(age <span class="sc">==</span> <span class="st">&quot;18-29&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;30-44&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;45-60&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;&gt; 60&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(age, <span class="at">level =</span> <span class="fu">c</span>(<span class="st">&quot;18-29&quot;</span>, <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;45-60&quot;</span>, <span class="st">&quot;&gt; 60&quot;</span>)),</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>                       <span class="at">y =</span> ep2_rank)) <span class="sc">+</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">color =</span> <span class="st">&quot;indianred4&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode II Rank&quot;</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Age Group&quot;</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Ranking&quot;</span>)  <span class="sc">+</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>() <span class="sc">+</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>age_ep3_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(age <span class="sc">==</span> <span class="st">&quot;18-29&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;30-44&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;45-60&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;&gt; 60&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(age, <span class="at">level =</span> <span class="fu">c</span>(<span class="st">&quot;18-29&quot;</span>, <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;45-60&quot;</span>, <span class="st">&quot;&gt; 60&quot;</span>)),</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>                       <span class="at">y =</span> ep3_rank)) <span class="sc">+</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">color =</span> <span class="st">&quot;indianred4&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode III Rank&quot;</span>,</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Age Group&quot;</span>,</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Ranking&quot;</span>)  <span class="sc">+</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>() <span class="sc">+</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>age_ep4_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(age <span class="sc">==</span> <span class="st">&quot;18-29&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;30-44&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;45-60&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;&gt; 60&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(age, <span class="at">level =</span> <span class="fu">c</span>(<span class="st">&quot;18-29&quot;</span>, <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;45-60&quot;</span>, <span class="st">&quot;&gt; 60&quot;</span>)),</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>                       <span class="at">y =</span> ep4_rank)) <span class="sc">+</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">color =</span> <span class="st">&quot;indianred4&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode IV Rank&quot;</span>,</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Age Group&quot;</span>,</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Ranking&quot;</span>)  <span class="sc">+</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>() <span class="sc">+</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>age_ep5_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(age <span class="sc">==</span> <span class="st">&quot;18-29&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;30-44&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;45-60&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;&gt; 60&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(age, <span class="at">level =</span> <span class="fu">c</span>(<span class="st">&quot;18-29&quot;</span>, <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;45-60&quot;</span>, <span class="st">&quot;&gt; 60&quot;</span>)),</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>                       <span class="at">y =</span> ep5_rank)) <span class="sc">+</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">color =</span> <span class="st">&quot;indianred4&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode V Rank&quot;</span>,</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Age Group&quot;</span>,</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Ranking&quot;</span>)  <span class="sc">+</span></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>() <span class="sc">+</span></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>age_ep6_rank <span class="ot">&lt;-</span> StarWars <span class="sc">|&gt;</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(age <span class="sc">==</span> <span class="st">&quot;18-29&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;30-44&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;45-60&quot;</span> <span class="sc">|</span> age <span class="sc">==</span> <span class="st">&quot;&gt; 60&quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(age, <span class="at">level =</span> <span class="fu">c</span>(<span class="st">&quot;18-29&quot;</span>, <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;45-60&quot;</span>, <span class="st">&quot;&gt; 60&quot;</span>)),</span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>                       <span class="at">y =</span> ep6_rank)) <span class="sc">+</span></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">color =</span> <span class="st">&quot;indianred4&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;steelblue&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Episode VI Rank&quot;</span>,</span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Age Group&quot;</span>,</span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Ranking&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_reverse</span>() <span class="sc">+</span></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_stata</span>()</span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a><span class="fu">ggarrange</span>(age_ep1_rank, age_ep2_rank, age_ep3_rank, age_ep4_rank, </span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>          age_ep5_rank, age_ep6_rank, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">align =</span> <span class="st">&quot;v&quot;</span>)</span></code></pre></div>
+<p><img src="index_files/figure-html5/unnamed-chunk-2-1.png" width="960" /><img src="index_files/figure-html5/unnamed-chunk-2-2.png" width="960" /><img src="index_files/figure-html5/unnamed-chunk-2-3.png" width="960" /></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>ep1_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(ep1_rank <span class="sc">~</span> age, <span class="at">data =</span> StarWars)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>ep2_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(ep2_rank <span class="sc">~</span> age, <span class="at">data =</span> StarWars)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>ep3_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(ep3_rank <span class="sc">~</span> age, <span class="at">data =</span> StarWars)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>ep4_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(ep4_rank <span class="sc">~</span> age, <span class="at">data =</span> StarWars)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>ep5_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(ep5_rank <span class="sc">~</span> age, <span class="at">data =</span> StarWars)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>ep6_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(ep6_rank <span class="sc">~</span> age, <span class="at">data =</span> StarWars)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>var_labels <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;(Intercept)&quot;</span> <span class="ot">=</span> <span class="st">&quot;Intercept&quot;</span>,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;age&gt; 60&quot;</span> <span class="ot">=</span> <span class="st">&quot;Age &gt; 60&quot;</span>,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;age18-29&quot;</span> <span class="ot">=</span> <span class="st">&quot;Age 18-29&quot;</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;age30-44&quot;</span> <span class="ot">=</span> <span class="st">&quot;Age 30-44&quot;</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;age45-60&quot;</span> <span class="ot">=</span> <span class="st">&quot;Age 45-60&quot;</span>)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>modelsummary<span class="sc">::</span><span class="fu">modelsummary</span>(<span class="fu">list</span>(ep1_lm, ep2_lm, ep3_lm, ep4_lm, ep5_lm, ep6_lm),</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>                           <span class="at">gof_map =</span> <span class="cn">NA</span>,</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>                           <span class="at">statistic =</span> <span class="fu">c</span>(<span class="st">&quot;s.e. = {std.error}&quot;</span>,</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>                                         <span class="st">&quot;p = {p.value}&quot;</span>),</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>                           <span class="at">coef_rename =</span> var_labels)</span></code></pre></div>
 <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1784,22 +424,44 @@ Intercept
 <td style="text-align:left;">
 </td>
 <td style="text-align:center;">
-(0.394)
+s.e. = 0.394
 </td>
 <td style="text-align:center;">
-(0.338)
+s.e. = 0.338
 </td>
 <td style="text-align:center;">
-(0.346)
+s.e. = 0.346
 </td>
 <td style="text-align:center;">
-(0.450)
+s.e. = 0.450
 </td>
 <td style="text-align:center;">
-(0.391)
+s.e. = 0.391
 </td>
 <td style="text-align:center;">
-(0.414)
+s.e. = 0.414
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+p = &lt;0.001
+</td>
+<td style="text-align:center;">
+p = &lt;0.001
+</td>
+<td style="text-align:center;">
+p = &lt;0.001
+</td>
+<td style="text-align:center;">
+p = &lt;0.001
+</td>
+<td style="text-align:center;">
+p = &lt;0.001
+</td>
+<td style="text-align:center;">
+p = &lt;0.001
 </td>
 </tr>
 <tr>
@@ -1829,22 +491,44 @@ Age &gt; 60
 <td style="text-align:left;">
 </td>
 <td style="text-align:center;">
-(0.410)
+s.e. = 0.410
 </td>
 <td style="text-align:center;">
-(0.352)
+s.e. = 0.352
 </td>
 <td style="text-align:center;">
-(0.361)
+s.e. = 0.361
 </td>
 <td style="text-align:center;">
-(0.468)
+s.e. = 0.468
 </td>
 <td style="text-align:center;">
-(0.407)
+s.e. = 0.407
 </td>
 <td style="text-align:center;">
-(0.431)
+s.e. = 0.431
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+p = 0.666
+</td>
+<td style="text-align:center;">
+p = 0.965
+</td>
+<td style="text-align:center;">
+p = 0.697
+</td>
+<td style="text-align:center;">
+p = 0.982
+</td>
+<td style="text-align:center;">
+p = 0.664
+</td>
+<td style="text-align:center;">
+p = 0.735
 </td>
 </tr>
 <tr>
@@ -1874,22 +558,44 @@ Age 18-29
 <td style="text-align:left;">
 </td>
 <td style="text-align:center;">
-(0.411)
+s.e. = 0.411
 </td>
 <td style="text-align:center;">
-(0.353)
+s.e. = 0.353
 </td>
 <td style="text-align:center;">
-(0.361)
+s.e. = 0.361
 </td>
 <td style="text-align:center;">
-(0.469)
+s.e. = 0.469
 </td>
 <td style="text-align:center;">
-(0.409)
+s.e. = 0.409
 </td>
 <td style="text-align:center;">
-(0.432)
+s.e. = 0.432
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+p = 0.027
+</td>
+<td style="text-align:center;">
+p = 0.322
+</td>
+<td style="text-align:center;">
+p = 0.541
+</td>
+<td style="text-align:center;">
+p = 0.082
+</td>
+<td style="text-align:center;">
+p = 0.696
+</td>
+<td style="text-align:center;">
+p = 0.375
 </td>
 </tr>
 <tr>
@@ -1919,22 +625,44 @@ Age 30-44
 <td style="text-align:left;">
 </td>
 <td style="text-align:center;">
-(0.409)
+s.e. = 0.409
 </td>
 <td style="text-align:center;">
-(0.351)
+s.e. = 0.351
 </td>
 <td style="text-align:center;">
-(0.360)
+s.e. = 0.360
 </td>
 <td style="text-align:center;">
-(0.467)
+s.e. = 0.467
 </td>
 <td style="text-align:center;">
-(0.406)
+s.e. = 0.406
 </td>
 <td style="text-align:center;">
-(0.430)
+s.e. = 0.430
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+p = 0.004
+</td>
+<td style="text-align:center;">
+p = 0.105
+</td>
+<td style="text-align:center;">
+p = 0.423
+</td>
+<td style="text-align:center;">
+p = 0.058
+</td>
+<td style="text-align:center;">
+p = 0.371
+</td>
+<td style="text-align:center;">
+p = 0.068
 </td>
 </tr>
 <tr>
@@ -1964,46 +692,91 @@ Age 45-60
 <td style="text-align:left;">
 </td>
 <td style="text-align:center;">
-(0.407)
+s.e. = 0.407
 </td>
 <td style="text-align:center;">
-(0.349)
+s.e. = 0.349
 </td>
 <td style="text-align:center;">
-(0.358)
+s.e. = 0.358
 </td>
 <td style="text-align:center;">
-(0.465)
+s.e. = 0.465
 </td>
 <td style="text-align:center;">
-(0.404)
+s.e. = 0.404
 </td>
 <td style="text-align:center;">
-(0.428)
+s.e. = 0.428
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:center;">
+p = 0.384
+</td>
+<td style="text-align:center;">
+p = 0.229
+</td>
+<td style="text-align:center;">
+p = 0.328
+</td>
+<td style="text-align:center;">
+p = 0.278
+</td>
+<td style="text-align:center;">
+p = 0.757
+</td>
+<td style="text-align:center;">
+p = 0.247
 </td>
 </tr>
 </tbody>
 </table>
-</div>
+<p>Based on these visualizations, we can get a better sense of the
+correlation between age and which Star Wars movies are ranked higher.
+Looking at the graphs, it appears that there is not a strong correlation
+between age and ranking. In fact, among all age groups, it appears that
+episodes IV, V, and VI are generally ranked the highest. Meaning, the
+original trilogy is generally liked more than the prequels among
+everyone, regardless of age. Thus, <strong>my hypothesis is
+disproved</strong>.</p>
+<p>In the regression, the main coefficient of interest is the ranking of
+the films. Put simply, we are looking at the association of the ranking
+of the films with the ages of the respondents. Looking specifically at
+the p-values of the age groups, they, for the most part, tell us that
+the association between rankings and age is not statistically
+significant. This is because the p-value (or the probability of getting
+a result equal or more extreme than what we actually observed assuming
+age has no effect) for each age group is generally greater than 0.1. As
+a result, <strong>I do not believe the coefficient represents a causal
+effect</strong>.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Based on these visualizations, we can get a better sense of the correlation between age and which Star Wars movies are ranked higher. Looking at the graphs, it appears that there is not a strong correlation between age and ranking. In fact, among all age groups, it appears that episodes IV, V, and VI are generally ranked the highest. Meaning, the original trilogy is generally liked more than the prequels among everyone, regardless of age.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<!--radix_placeholder_article_footer-->
-<!--/radix_placeholder_article_footer-->
-</div>
+<p>What I was seeking to discover through this analysis was if younger
+people would rank the Star Wars prequel movies higher in their rankings
+of the movies overall, for they grew up as the prequels were being
+released. What I found was that age and the ranking of the films has no
+strong correlation. In fact, the original movies are generally liked
+more than the prequels by everyone, regardless of age. As a result, I
+did not find any support for my hypothesis. A limitation to my analysis
+is the sample size. If more people were surveyed (especially across
+multiple age cohorts) it would greatly improve my ability to draw
+conclusions from the data. Additionally, many respondents left some
+rankings empty or simply numbered the films exactly 1 through 6 instead
+of actually ranking them. Moreover, a possible confounder could be how
+many of the films each respondent has actually seen. If you have not
+seen all the films, you cannot give a true ranking of them all. Finally,
+if I had more time and money, I would expand this study and make an
+effort to sample much more people across all age cohorts. In this way, I
+think the absence of a correlation between age and rankings could be
+reaffirmed or challenged. Additionally, I think it would be interesting
+to include the new sequel films and perform a survey to see how young
+people today rate those films in relation to all the rest.</p>
 
-<div class="d-appendix">
-</div>
+</main>
 
 
-<!--radix_placeholder_site_after_body-->
-<!--/radix_placeholder_site_after_body-->
-<!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
-<!--/radix_placeholder_appendices-->
-<!--radix_placeholder_navigation_after_body-->
-<!--/radix_placeholder_navigation_after_body-->
 
 </body>
-
 </html>

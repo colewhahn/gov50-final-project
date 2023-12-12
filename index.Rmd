@@ -3,21 +3,24 @@ title: "What Your Age Says About Your Favorite Star Wars Movie"
 author: "Cole Hahn"
 description: "Gov 50 Final Project"
 output:
-  distill::distill_article:
+  cleanrmd::html_document_clean:
+    theme: almond
+    code_folding: true
     self_contained: false
     toc: true
+    toc_float: true
 ---
 
 ## Introduction
 
-Do younger people prefer the Star Wars prequel movies more than the originals? In this study, I analyze the ages of respondents and which Star Wars movies they like the most. I hypothesize that if people are younger then they will prefer the prequel movies more than the originals because they grew up as the prequel movies were being released. For this analysis, I use data collected by Walt Hickey from FiveThirtyEight. This is interesting to investigate because it could say more about the attachment or nostalgia you may have with the films that you grew up with.
+Do younger people prefer the Star Wars prequel movies more than the originals? In this study, I analyze the ages of respondents and which Star Wars movies they like the most. I hypothesize that if people are younger then they will prefer the prequel movies more than the originals, for they grew up as the prequel movies were being released. For this analysis, I use data collected by Walt Hickey from FiveThirtyEight. This is interesting to investigate because it could say more about the attachment or nostalgia people may have with the films that they grew up with.
 
 
 ## Data Summary
 
-The data source I am using for this analysis is from Walt Hickey of FiveThirtyEight. All of the data was collected in a survey of 1,186 respondents, and Hickey measures many things including the rankings for each film, gender, age, income, education, and geographical location. For the purposes of this analysis, I will be using the rankings of the films and age variables. Additionally, my research design is **cross-sectional**, for I am reviewing the measures of the ages of respondents and their rankings of the films at the same point in time.
+The data source I am using for this analysis is from Walt Hickey of FiveThirtyEight. All of the data was collected in a survey of 1,186 respondents, and Hickey measured the ranking for each film, gender, age, income, education, and geographical location. For the purposes of this analysis, I will be using the ranking of the films and age variables. Additionally, my research design is **cross-sectional**, for I am reviewing the measures of the ages of respondents and their rankings of the films at the same point in time.
 
-Specifically, the explanatory variable or independent variable of interest is the age group of the respondents in the survey. This is measured in four age groups: 18-29, 30-44, 45-60, and > 60. My outcome variable or dependent variable is how respondents ranked the 6 Star Wars movies. This is measured by rankings of 1 to 6 with 1 being their favorite film and 6 being their least favorite. If I observe that those in the younger age categories (18-29 and 30-44) ranked the prequel movies higher, this would support my hypothesis. However, if I observe the opposite or, for example, there is only strong support for the original movies among all age groups, this would be evidence against my hypothesis.
+Specifically, the explanatory variable or independent variable of interest is the age group of the respondents in the survey. This is measured in four age groups: 18-29, 30-44, 45-60, and > 60. My outcome variable or dependent variable is how respondents ranked the 6 Star Wars movies. This is measured by rankings of 1 to 6, with 1 being their favorite film and 6 being their least favorite. If I observe that those in the younger age categories (18-29 and 30-44) ranked the prequel movies higher, this would support my hypothesis. However, if I observe the opposite or, for example, there is only strong support for the original movies among all age groups, this would be evidence against my hypothesis.
 
 The following visualizations summarize the dependent variable, which is the rankings. Each graph shows the amount of responses for each ranking position for each movie: 1 is the best and 6 is the worst.  
 
@@ -47,7 +50,7 @@ ep1_rank <- StarWars |>
   ggplot(mapping = aes(x = ep1_rank, y = n)) +
   geom_col(fill = "steelblue") +
   labs(title = "Episode I Rank",
-       x = "Rankings",
+       x = "Ranking",
        y = "Number of Respondents") +
   theme_stata()
 
@@ -56,7 +59,7 @@ ep2_rank <- StarWars |>
   ggplot(mapping = aes(x = ep2_rank, y = n)) +
   geom_col(fill = "steelblue") +
   labs(title = "Episode II Rank",
-       x = "Rankings",
+       x = "Ranking",
        y = "Number of Respondents") +
   theme_stata()
 
@@ -65,7 +68,7 @@ ep3_rank <- StarWars |>
   ggplot(mapping = aes(x = ep3_rank, y = n)) +
   geom_col(fill = "steelblue") +
   labs(title = "Episode III Rank",
-       x = "Rankings",
+       x = "Ranking",
        y = "Number of Respondents") +
   theme_stata()
 
@@ -74,7 +77,7 @@ ep4_rank <- StarWars |>
   ggplot(mapping = aes(x = ep4_rank, y = n)) +
   geom_col(fill = "steelblue") +
   labs(title = "Episode IV Rank",
-       x = "Rankings",
+       x = "Ranking",
        y = "Number of Respondents") +
   theme_stata()
 
@@ -83,7 +86,7 @@ ep5_rank <- StarWars |>
   ggplot(mapping = aes(x = ep5_rank, y = n)) +
   geom_col(fill = "steelblue") +
   labs(title = "Episode V Rank",
-       x = "Rankings",
+       x = "Ranking",
        y = "Number of Respondents") +
   theme_stata()
 
@@ -92,7 +95,7 @@ ep6_rank <- StarWars |>
   ggplot(mapping = aes(x = ep6_rank, y = n)) +
   geom_col(fill = "steelblue") +
   labs(title = "Episode VI Rank",
-       x = "Rankings",
+       x = "Ranking",
        y = "Number of Respondents") +
   theme_stata()
 
@@ -103,7 +106,7 @@ ggarrange(ep1_rank, ep2_rank, ep3_rank, ep4_rank,
 
 ## The Results
 
-
+The following boxplots show the correlation between age and the ranking of the films. Following the boxplots, there is a table showing the regression model with each film's ranking serving as the main coefficient of interest.
 
 ```{r, code_folding=TRUE, results='hide'}
 age_ep1_rank <- StarWars |>
@@ -113,7 +116,7 @@ age_ep1_rank <- StarWars |>
   geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode I Rank",
        x = "Age Group",
-       y = "Rankings")  +
+       y = "Ranking")  +
   scale_y_reverse() +
   theme_stata()
 
@@ -124,7 +127,7 @@ age_ep2_rank <- StarWars |>
   geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode II Rank",
        x = "Age Group",
-       y = "Rankings")  +
+       y = "Ranking")  +
   scale_y_reverse() +
   theme_stata()
 
@@ -135,7 +138,7 @@ age_ep3_rank <- StarWars |>
   geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode III Rank",
        x = "Age Group",
-       y = "Rankings")  +
+       y = "Ranking")  +
   scale_y_reverse() +
   theme_stata()
   
@@ -146,7 +149,7 @@ age_ep4_rank <- StarWars |>
   geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode IV Rank",
        x = "Age Group",
-       y = "Rankings")  +
+       y = "Ranking")  +
   scale_y_reverse() +
   theme_stata()
   
@@ -157,7 +160,7 @@ age_ep5_rank <- StarWars |>
   geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode V Rank",
        x = "Age Group",
-       y = "Rankings")  +
+       y = "Ranking")  +
   scale_y_reverse() +
   theme_stata()
 
@@ -168,7 +171,7 @@ age_ep6_rank <- StarWars |>
   geom_boxplot(color = "indianred4", fill = "steelblue") +
   labs(title = "Episode VI Rank",
        x = "Age Group",
-       y = "Rankings") +
+       y = "Ranking") +
   scale_y_reverse() +
   theme_stata()
 
@@ -197,11 +200,22 @@ var_labels <- c(
 
 modelsummary::modelsummary(list(ep1_lm, ep2_lm, ep3_lm, ep4_lm, ep5_lm, ep6_lm),
                            gof_map = NA,
+                           statistic = c("s.e. = {std.error}",
+                                         "p = {p.value}"),
                            coef_rename = var_labels)
 ```
 
-Based on these visualizations, we can get a better sense of the correlation between age and which Star Wars movies are ranked higher. Looking at the graphs, it appears that there is not a strong correlation between age and ranking. In fact, among all age groups, it appears that episodes IV, V, and VI are generally ranked the highest. Meaning, the original trilogy is generally liked more than the prequels among everyone, regardless of age.
+Based on these visualizations, we can get a better sense of the correlation between age and which Star Wars movies are ranked higher. Looking at the graphs, it appears that there is not a strong correlation between age and ranking. In fact, among all age groups, it appears that episodes IV, V, and VI are generally ranked the highest. Meaning, the original trilogy is generally liked more than the prequels among everyone, regardless of age. Thus, **my hypothesis is disproved**.
+
+In the regression, the main coefficient of interest is the ranking of the films. Put simply, we are looking at the association of the ranking of the films with the ages of the respondents. Looking specifically at the p-values of the age groups, they, for the most part, tell us that the association between rankings and age is not statistically significant. This is because the p-value (or the probability of getting a result equal or more extreme than what we actually observed assuming age has no effect) for each age group is generally greater than 0.1. As a result, **I do not believe the coefficient represents a causal effect**.
 
 ## Conclusion
+
+What I was seeking to discover through this analysis was if younger people would rank the Star Wars prequel movies higher in their rankings of the movies overall, for they grew up as the prequels were being released. What I found was that age and the ranking of the films has no strong correlation. In fact, the original movies are generally liked more than the prequels by everyone, regardless of age. As a result, I did not find any support for my hypothesis. A limitation to my analysis is the sample size. If more people were surveyed (especially across multiple age cohorts) it would greatly improve my ability to draw conclusions from the data. Additionally, many respondents left some rankings empty or simply numbered the films exactly 1 through 6 instead of actually ranking them. Moreover, a possible confounder could be how many of the films each respondent has actually seen. If you have not seen all the films, you cannot give a true ranking of them all. Finally, if I had more time and money, I would expand this study and make an effort to sample much more people across all age cohorts. In this way, I think the absence of a correlation between age and rankings could be reaffirmed or challenged. Additionally, I think it would be interesting to include the new sequel films and perform a survey to see how young people today rate those films in relation to all the rest.
+
+
+
+
+
 
 
